@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Al Nibras Group — Solution Manifesto</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #04080F;
+  --dark: #080F1A;
+  --card: #0C1520;
+  --card2: #111D2C;
+  --card3: #162438;
+  --teal: #0ABFAD;
+  --teal2: #07D4BF;
+  --gold: #E8B84B;
+  --gold2: #F5D070;
+  --green: #22C97A;
+  --red: #E85454;
+  --purple: #8B7CF6;
+  --orange: #F0883E;
+  --border: rgba(10,191,173,0.12);
+  --border2: rgba(10,191,173,0.25);
+  --text: #DDE8F0;
+  --muted: #607888;
+  --muted2: #8AAABB;
+  --white: #FFFFFF;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'DM Sans',sans-serif;
+  line-height:1.7;
+  overflow-x:hidden;
+}
+
+/* BG MESH */
+body::before{
+  content:'';position:fixed;top:0;left:0;width:100%;height:100%;
+  background:
+    radial-gradient(ellipse 50% 40% at 5% 10%, rgba(10,191,173,0.05) 0%,transparent 60%),
+    radial-gradient(ellipse 40% 30% at 95% 90%, rgba(232,184,75,0.04) 0%,transparent 60%),
+    radial-gradient(ellipse 60% 50% at 50% 50%, rgba(4,8,15,0.9) 0%,transparent 100%);
+  pointer-events:none;z-index:0;
+}
+
+/* GRAIN */
+body::after{
+  content:'';position:fixed;top:0;left:0;width:100%;height:100%;
+  opacity:0.018;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events:none;z-index:0;
+}
+
+.wrap{max-width:880px;margin:0 auto;padding:0 20px 80px;position:relative;z-index:1;}
+
+/* ===== HEADER ===== */
+header{
+  padding:70px 0 60px;
+  text-align:center;
+  border-bottom:1px solid var(--border);
+  position:relative;
+}
+
+.header-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(10,191,173,0.07);
+  border:1px solid rgba(10,191,173,0.2);
+  border-radius:50px;padding:7px 18px;
+  margin-bottom:28px;
+  font-size:11px;letter-spacing:3px;text-transform:uppercase;
+  color:var(--teal);
+}
+.eyebrow-dot{width:6px;height:6px;border-radius:50%;background:var(--teal);animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.2;}}
+
+h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(36px,5vw,64px);
+  line-height:1.15;color:var(--white);
+  margin-bottom:20px;
+}
+h1 em{color:var(--teal);font-style:normal;}
+h1 span{color:var(--gold);}
+
+.header-desc{
+  font-size:17px;color:var(--muted2);
+  max-width:580px;margin:0 auto 32px;line-height:1.8;
+}
+
+.header-quote{
+  font-family:'Amiri',serif;
+  font-size:22px;color:rgba(232,184,75,0.7);
+  direction:rtl;line-height:2;
+  padding:16px 24px;
+  border-right:3px solid var(--gold);
+  border-radius:0 12px 12px 0;
+  background:rgba(232,184,75,0.04);
+  max-width:560px;margin:0 auto;
+  text-align:right;
+}
+
+/* ===== SYSTEM OVERVIEW ===== */
+.system-bar{
+  display:grid;grid-template-columns:1fr auto 1fr auto 1fr;
+  align-items:center;gap:0;
+  background:var(--card);border:1px solid var(--border2);
+  border-radius:20px;padding:24px;
+  margin:48px 0;
+}
+.sys-node{text-align:center;}
+.sys-icon{font-size:32px;margin-bottom:8px;}
+.sys-name{font-size:14px;font-weight:700;color:var(--white);}
+.sys-role{font-size:11px;color:var(--muted);margin-top:3px;}
+.sys-arrow{font-size:24px;color:var(--border2);text-align:center;padding:0 8px;}
+.sys-node.center .sys-icon{
+  background:rgba(10,191,173,0.1);
+  border:1px solid var(--border2);
+  border-radius:50%;width:60px;height:60px;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 8px;font-size:24px;
+}
+
+/* ===== SECTION ===== */
+section{padding:60px 0;border-bottom:1px solid var(--border);}
+section:last-of-type{border-bottom:none;}
+
+.sec-eyebrow{
+  display:flex;align-items:center;gap:8px;
+  font-size:11px;letter-spacing:2.5px;text-transform:uppercase;
+  color:var(--teal);margin-bottom:8px;
+}
+.sec-eyebrow::before{content:'◆';font-size:7px;}
+
+h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(28px,3.5vw,42px);
+  color:var(--white);margin-bottom:12px;line-height:1.25;
+}
+h2 em{color:var(--teal);font-style:italic;}
+h2 span{color:var(--gold);}
+
+.sec-desc{font-size:15px;color:var(--muted2);margin-bottom:40px;max-width:600px;}
+
+/* ===== PROBLEM-SOLUTION CARDS ===== */
+.ps-stack{display:flex;flex-direction:column;gap:20px;}
+
+.ps-card{
+  border-radius:20px;overflow:hidden;
+  border:1px solid var(--border);
+  transition:border-color 0.3s;
+  animation:fadeUp 0.6s ease both;
+}
+.ps-card:hover{border-color:var(--border2);}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(20px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+.ps-header{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:0;
+}
+
+.ps-problem{
+  background:linear-gradient(135deg,#1A0808,var(--card));
+  padding:22px 24px;
+  border-right:1px solid rgba(232,84,84,0.15);
+  position:relative;overflow:hidden;
+}
+.ps-problem::before{
+  content:'';position:absolute;top:-20px;right:-20px;
+  width:80px;height:80px;border-radius:50%;
+  background:radial-gradient(circle,rgba(232,84,84,0.1),transparent 70%);
+}
+
+.ps-solution{
+  background:linear-gradient(135deg,#041A12,var(--card));
+  padding:22px 24px;
+  position:relative;overflow:hidden;
+}
+.ps-solution::before{
+  content:'';position:absolute;top:-20px;left:-20px;
+  width:80px;height:80px;border-radius:50%;
+  background:radial-gradient(circle,rgba(10,191,173,0.1),transparent 70%);
+}
+
+.ps-label{
+  font-size:10px;letter-spacing:2px;text-transform:uppercase;
+  font-weight:700;margin-bottom:10px;
+  display:flex;align-items:center;gap:6px;
+}
+.ps-label.prob{color:var(--red);}
+.ps-label.sol{color:var(--teal);}
+
+.ps-title{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(15px,2vw,18px);
+  color:var(--white);margin-bottom:8px;line-height:1.4;
+}
+
+.ps-text{font-size:13px;color:var(--muted2);line-height:1.7;}
+
+.ps-urdu{
+  font-family:'Amiri',serif;font-size:13px;
+  direction:rtl;text-align:right;
+  color:var(--muted);line-height:2;
+  margin-top:8px;
+}
+
+.ps-footer{
+  background:var(--card2);
+  padding:14px 24px;
+  display:flex;justify-content:space-between;align-items:center;
+  gap:16px;border-top:1px solid var(--border);
+  flex-wrap:wrap;
+}
+
+.ps-vertical{
+  display:flex;align-items:center;gap:6px;
+  font-size:11px;font-weight:700;letter-spacing:0.5px;
+}
+
+.ps-impact{
+  font-size:12px;color:var(--muted);
+  display:flex;align-items:center;gap:6px;
+}
+.ps-impact strong{color:var(--green);}
+
+.tag{
+  display:inline-flex;align-items:center;
+  padding:3px 10px;border-radius:20px;
+  font-size:10px;font-weight:700;letter-spacing:0.5px;
+}
+.tag-red{background:rgba(232,84,84,0.12);border:1px solid rgba(232,84,84,0.2);color:var(--red);}
+.tag-teal{background:rgba(10,191,173,0.1);border:1px solid var(--border);color:var(--teal);}
+.tag-gold{background:rgba(232,184,75,0.1);border:1px solid rgba(232,184,75,0.2);color:var(--gold);}
+.tag-green{background:rgba(34,201,122,0.1);border:1px solid rgba(34,201,122,0.2);color:var(--green);}
+.tag-purple{background:rgba(139,124,246,0.1);border:1px solid rgba(139,124,246,0.2);color:var(--purple);}
+.tag-orange{background:rgba(240,136,62,0.1);border:1px solid rgba(240,136,62,0.2);color:var(--orange);}
+
+/* ===== LOOP SECTION ===== */
+.loop-visual{
+  display:flex;flex-direction:column;gap:0;
+  max-width:560px;margin:0 auto;
+}
+
+.loop-step{
+  display:flex;align-items:stretch;gap:0;
+}
+
+.loop-left{
+  width:32px;display:flex;flex-direction:column;
+  align-items:center;flex-shrink:0;
+}
+.loop-circle{
+  width:32px;height:32px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;flex-shrink:0;border:1px solid var(--border2);
+  background:var(--card);
+}
+.loop-line{width:1px;flex:1;background:var(--border);margin:2px 0;}
+
+.loop-body{
+  flex:1;padding:14px 16px 20px;
+  background:var(--card);border:1px solid var(--border);
+  border-radius:14px;margin:0 0 8px 12px;
+  transition:border-color 0.2s;
+}
+.loop-body:hover{border-color:var(--border2);}
+.loop-name{font-size:14px;font-weight:700;color:var(--white);margin-bottom:4px;}
+.loop-desc{font-size:12px;color:var(--muted2);}
+.loop-vertical{font-size:11px;color:var(--teal);margin-top:6px;font-weight:600;}
+
+/* ===== IMPACT METRICS ===== */
+.metrics-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:14px;margin:32px 0;
+}
+.metric-card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:16px;padding:20px 16px;text-align:center;
+  transition:all 0.2s;
+}
+.metric-card:hover{border-color:var(--border2);transform:translateY(-3px);}
+.m-num{
+  font-family:'Playfair Display',serif;
+  font-size:36px;color:var(--teal);line-height:1;margin-bottom:6px;
+}
+.m-label{font-size:11px;color:var(--muted);letter-spacing:1px;text-transform:uppercase;}
+.m-sub{font-size:12px;color:var(--muted2);margin-top:4px;}
+
+/* ===== MANIFESTO STRIP ===== */
+.manifesto{
+  background:linear-gradient(135deg,var(--card2),var(--card));
+  border:1px solid var(--border2);
+  border-radius:24px;padding:40px;
+  text-align:center;margin:48px 0;
+  position:relative;overflow:hidden;
+}
+.manifesto::before{
+  content:'';position:absolute;top:-40px;left:50%;transform:translateX(-50%);
+  width:200px;height:200px;border-radius:50%;
+  background:radial-gradient(circle,rgba(10,191,173,0.08),transparent 70%);
+}
+.manifesto h3{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(22px,3vw,34px);
+  color:var(--white);margin-bottom:16px;
+  line-height:1.4;position:relative;
+}
+.manifesto h3 em{color:var(--teal);font-style:italic;}
+.manifesto p{font-size:15px;color:var(--muted2);max-width:540px;margin:0 auto;line-height:1.8;position:relative;}
+.manifesto .urdu-manifesto{
+  font-family:'Amiri',serif;font-size:20px;
+  color:rgba(232,184,75,0.6);direction:rtl;
+  line-height:2;margin-top:20px;position:relative;
+}
+
+/* ===== VERTICAL BREAKDOWN ===== */
+.vertical-grid{display:grid;gap:16px;}
+
+.v-card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:18px;overflow:hidden;
+}
+.v-card-top{
+  padding:20px 24px;display:grid;
+  grid-template-columns:auto 1fr auto;gap:16px;align-items:start;
+}
+.v-icon{
+  width:48px;height:48px;border-radius:14px;
+  display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;
+}
+.v-name{font-size:17px;font-weight:700;color:var(--white);margin-bottom:4px;}
+.v-tagline{font-size:13px;color:var(--muted2);}
+.v-problems{display:flex;flex-direction:column;gap:6px;}
+.v-p-item{display:flex;align-items:center;gap:6px;font-size:12px;}
+.v-p-item.solved{color:var(--green);}
+.v-p-item.solved::before{content:'✓';color:var(--green);font-weight:700;}
+.v-card-bottom{
+  padding:14px 24px;background:rgba(255,255,255,0.02);
+  border-top:1px solid var(--border);
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+}
+
+/* ===== TIMELINE ===== */
+.timeline{display:flex;flex-direction:column;gap:0;}
+.tl-item{display:flex;gap:0;align-items:stretch;}
+.tl-left{
+  width:100px;flex-shrink:0;text-align:right;
+  padding-right:20px;padding-top:16px;
+}
+.tl-phase{font-size:11px;font-weight:700;color:var(--teal);letter-spacing:1px;text-transform:uppercase;}
+.tl-days{font-size:20px;font-weight:900;color:var(--white);line-height:1;margin-top:4px;}
+.tl-center{
+  width:2px;background:var(--border);position:relative;flex-shrink:0;
+}
+.tl-dot{
+  position:absolute;top:18px;left:50%;transform:translateX(-50%);
+  width:12px;height:12px;border-radius:50%;background:var(--teal);
+  border:2px solid var(--bg);
+}
+.tl-body{
+  flex:1;padding:14px 0 28px 20px;
+}
+.tl-title{font-size:15px;font-weight:700;color:var(--white);margin-bottom:10px;}
+.tl-items{display:flex;flex-direction:column;gap:6px;}
+.tl-i{
+  display:flex;align-items:flex-start;gap:8px;
+  font-size:13px;color:var(--muted2);
+}
+.tl-i::before{content:'→';color:var(--teal);flex-shrink:0;font-weight:700;}
+.tl-i strong{color:var(--text);}
+
+/* ===== FOOTER ===== */
+footer{
+  padding:48px 0 32px;text-align:center;
+  border-top:1px solid var(--border);
+}
+.footer-logo{
+  font-family:'Playfair Display',serif;
+  font-size:24px;color:var(--teal);margin-bottom:8px;
+}
+.footer-sub{font-size:13px;color:var(--muted);}
+.footer-urdu{
+  font-family:'Amiri',serif;font-size:18px;
+  color:rgba(232,184,75,0.5);margin-top:12px;
+}
+
+/* RESPONSIVE */
+@media(max-width:640px){
+  .ps-header{grid-template-columns:1fr;}
+  .ps-problem{border-right:none;border-bottom:1px solid rgba(232,84,84,0.15);}
+  .system-bar{grid-template-columns:1fr;gap:8px;}
+  .sys-arrow{transform:rotate(90deg);}
+  .tl-left{width:70px;}
+  .tl-days{font-size:16px;}
+  .manifesto{padding:28px 20px;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="header-eyebrow">
+    <div class="eyebrow-dot"></div>
+    Al Nibras Group — Solution Manifesto 2025
+  </div>
+
+  <h1>
+    Unhon ne <em>Masla</em> Bataya<br>
+    Humne <span>Hal</span> Banaya
+  </h1>
+
+  <p class="header-desc">
+    Abbas Hussain ki har ek educational hallucination ka direct jawab — Al Nibras Group ke 3-vertical ecosystem ke zariye. Pakistan ka pehla self-sustaining education-finance loop.
+  </p>
+
+  <div class="header-quote">
+    اسکول اور سیکھنے کا کوئی لازمی تعلق نہیں — ہم نے وہ تعلق بنایا جو ہونا چاہیے تھا۔
+  </div>
+</header>
+
+<!-- ===== SYSTEM OVERVIEW ===== -->
+<div class="system-bar">
+  <div class="sys-node">
+    <div class="sys-icon">🏛️</div>
+    <div class="sys-name">Al Nibras Group NGO</div>
+    <div class="sys-role">Umbrella · Credibility · Grants</div>
+  </div>
+  <div class="sys-arrow">⟷</div>
+  <div class="sys-node center">
+    <div class="sys-icon">🔄</div>
+    <div class="sys-name">Integrated Loop</div>
+    <div class="sys-role">Self-sustaining ecosystem</div>
+  </div>
+  <div class="sys-arrow">⟷</div>
+  <div class="sys-node" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;text-align:left;">
+    <div>
+      <div class="sys-icon">📱</div>
+      <div class="sys-name">Al Nibras Finance</div>
+      <div class="sys-role">Kids Banking App</div>
+    </div>
+    <div>
+      <div class="sys-icon">🎓</div>
+      <div class="sys-name">Al Nibras Education</div>
+      <div class="sys-role">Mustafai Schools</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PROBLEMS vs SOLUTIONS ===== -->
+<section>
+  <div class="sec-eyebrow">Abbas Hussain × Al Nibras</div>
+  <h2>11 <em>Educational Hallucinations</em><br>— 11 <span>Direct Solutions</span></h2>
+  <p class="sec-desc">Will Richardson aur Abbas Hussain ne Pakistan ki educational problems diagnose ki hain. Al Nibras Group ne har ek ka systemic jawab diya hai.</p>
+
+  <div class="ps-stack">
+
+    <!-- 1 -->
+    <div class="ps-card" style="animation-delay:0.05s;">
+      <div class="ps-header">
+        <div class="ps-problem">
+          <div class="ps-label prob">❌ Hallucination #1</div>
+          <div class="ps-title">Curiosity Ko Saza — Jawab Ko Inam</div>
+          <div class="ps-text">Nizam-e-taleem mein sirf ratta maar jawab ko marks milte hain. Sawaal poochhna "disturbance" samjha jata hai. Bachay ki fitri learning ki taqat kuchli jaati hai.</div>
+          <div class="ps-urdu">نظام میں سوال پوچھنا سزا ہے — رٹا مارنا انعام ہے۔</div>
+        </div>
+        <div class="ps-solution">
+          <div class="ps-label sol">✅ Al Nibras Solution</div>
+          <div class="ps-title">Curiosity Engine — Roz Ek Naya Sawaal</div>
+          <div class="ps-text">Al Nibras Finance app mein daily AI-powered question jo bacha khud sochke jawab de. Koi "wrong answer" nahi. Har jawab celebrate hota hai. Sawaal poochhna = points milna.</div>
+          <div class="ps-urdu">ہمارے نظام میں سوال پوچھنا = پوائنٹس ملنا۔</div>
+        </div>
+      </div>
+      <div class="ps-footer">
+        <div class="ps-vertical">
+          <span class="tag tag-teal">📱 Finance App</span>
+          <span class="tag tag-gold">🎓 Education</span>
+        </div>
+        <div class="ps-impact">Abbas Hussain: <strong>"Celebrate curiosity, not answers"</strong></div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="ps-card" style="animation-delay:0.1s;">
+      <div class="ps-header">
+        <div class="ps-problem">
+          <div class="ps-label prob">❌ Hallucination #2</div>
+          <div class="ps-title">School = Learning Ka Jhooth</div>
+          <div class="ps-text">Michael Fullan ne 60 saal baad maana: "I was wrong — quality education cannot be scaled through schools." Phir bhi parents aankhein band karke school pe bharosa karte hain.</div>
+          <div class="ps-urdu">اسکول اور سیکھنے کا کوئی لازمی تعلق نہیں ہے۔</div>
+        </div>
+        <div class="ps-solution">
+          <div class="ps-label sol">✅ Al Nibras Solution</div>
+          <div class="ps-title">Ghar + School + App — Teeno Mila Ke</div>
+          <div class="ps-text">Al Nibras model mein asli learning teeno jagah hoti hai: Mustafai School (structured), Al Nibras Finance app (daily practice), aur ghar (parent coach module). School akela nahi — ek hissa hai.</div>
+          <div class="ps-urdu">گھر + اسکول + ایپ — تینوں مل کر سیکھنا ممکن ہے۔</div>
+        </div>
+      </div>
+      <div class="ps-footer">
+        <div class="ps-vertical">
+          <span class="tag tag-purple">🏛️ NGO</span>
+          <span class="tag tag-gold">🎓 Education</span>
+          <span class="tag tag-teal">📱 App</span>
+        </div>
+        <div class="ps-impact">Michael Fullan 2025: <strong>"Scaling quality education is impossible"</strong></div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="ps-card" style="animation-delay:0.15s;">
+      <div class="ps-header">
+        <div class="ps-problem">
+          <div class="ps-label prob">❌ Hallucination #3</div>
+          <div class="ps-title">Pehle 10 Saal Zaya</div>
+          <div class="ps-text">Life ke pehle 10 saal personality ki buniyaad banate hain — lekin in saalon mein koi financial literacy nahi sikhaya jata. Ye gap poori zindagi ka financial behavior decide karta hai.</div>
+          <div class="ps-urdu">پہلے دس سال شخصیت کی بنیاد بناتے ہیں — یہ سال ضائع ہو رہے ہیں۔</div>
+        </div>
+        <div class="ps-solution">
+          <div class="ps-label sol">✅ Al Nibras Solution</div>
+          <div class="ps-title">Age 5 Se Shuru — Al Nibras Finance</div>
+          <div class="ps-text">App specifically 5-17 age group ke liye design kiya gaya hai. 3 age tiers: 5-8, 9-12, 13-17. Har stage pe age-appropriate Islamic financial concepts. Parents ghar pe role model banein — Parent Coach module se.</div>
+          <div class="ps-urdu">ہم پانچ سال کی عمر سے مالی تعلیم شروع کرتے ہیں۔</div>
+        </div>
+      </div>
+      <div class="ps-footer">
+        <div class="ps-vertical">
+          <span class="tag tag-teal">📱 Finance App</span>
+          <span class="tag tag-green">👨‍👩‍👧 Parent Coach</span>
+        </div>
+        <div class="ps-impact">Target: <strong>Age 5–17 — Pehle 10 saal sahi karo</strong></div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="ps-card" style="animation-delay:0.2s;">
+      <div class="ps-header">
+        <div class="ps-problem">
+          <div class="ps-label prob">❌ Hallucination #4</div>
+          <div class="ps-title">Capitalism Ki 3 Laanaten — Comfort, Convenience, Consumption</div>
+          <div class="ps-text">"Kharidar" banaya ja raha hai har Pakistani ko. Depression ka ilaj shopping — yeh system ne seekhaya. Paisa aata hai, usi waqt uda diya jata hai kyunki savari aur khushi ka taalluq banaya gaya hai.</div>
+          <div class="ps-urdu">آسائش، سہولت اور خریداری — یہ تین لعنتیں انسان کو صارف بنا رہی ہیں۔</div>
+        </div>
+        <div class="ps-solution">
+          <div class="ps-label sol">✅ Al Nibras Solution</div>
+          <div class="ps-title">Islamic 1/3 Rule + Financial Tracker</div>
+          <div class="ps-text">Al Nibras Finance mein har pocket money 3 hisson mein divide hoti hai: 1/3 apne liye, 1/3 dusron ke liye (sadqa), 1/3 kal ke liye (saving). Ye Islamic principle + behavior design = anti-consumption habit se bachpan mein.</div>
+          <div class="ps-urdu">اسلامی ایک تہائی اصول — خریداری نہیں، بچت اور خدمت سکھائیں۔</div>
+        </div>
+      </div>
+      <div class="ps-footer">
+        <div class="ps-vertical">
+          <span class="tag tag-teal">📱 Finance App</span>
+          <span class="tag tag-gold">🕌 Islamic Finance</span>
+        </div>
+        <div class="ps-impact">Core principle: <strong>"Bachat aur sadqa — kharidar nahi banana"</strong></div>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="ps-card" style="animation-delay:0.25s;">
+      <div class="ps-header">
+        <div class="ps-problem">
+          <div class="ps-label prob">❌ Hallucination #5</div>
+          <div class="ps-title">Individual Success Ka Khabt</div>
+          <div class="ps-text">School ki diwar pe sirf "First Position" ka photo lagta hai. Collective growth, teamwork, aur community ka koi concept nahi. Har bacha akela jeet chahta hai — sab ke nuksan pe.</div>
+          <div class="ps-urdu">صرف فرسٹ آنے والے کی تصویر لگتی ہے — اجتماعی ترقی کا کوئی تصور نہیں۔</div>
+        </div>
+        <div class="ps-solution">
+          <div class="ps-label sol">✅ Al Nibras Solution</div>
+          <div class="ps-title">Community Badges + Student Entrepreneur Model</div>
+          <div class="ps-text">Al Nibras mein badges sirf individual nahi — "Community Builder" badge milta hai jab bacha dusron ko seekhata hai. NGO ka student entrepreneur model team-based hai. Ek student 5 ko sikhaye — sab ko points milein.</div>
+          <div class="ps-urdu">ہمارے نظام میں دوسروں کو سکھانا سب سے بڑا انعام ہے۔</div>
+        </div>
+      </div>
+      <div class="ps-footer">
+        <div class="ps-vertical">
+          <span class="tag tag-purple">🏛️ NGO</span>
+          <span class="tag tag-teal">📱 App</span>
+        </div>
+        <div class="ps-impact">Model: <strong>Peer learning = extra points — community wins</strong></div>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="ps-card" style="animation-delay:0.3s;">
+      <div class="ps-header">
+        <div class="ps-problem">
+          <div class="ps-label prob">❌ Hallucination #6</div>
+          <div class="ps-title">Knowledge Ki Taqseem — Subjects Alag Alag</div>
+          <div class="ps-text">Math alag, Science alag, Social Studies alag. Creativity aur innovation tab hoti hai jab ye khane aapaas mein milein. Lekin school ne deewarein khadi kar rakhi hain.</div>
+          <div class="ps-urdu">علم کو خانوں میں بانٹنا تخلیقی صلاحیت کو ختم کر دیتا ہے۔</div>
+        </div>
+        <div class="ps-solution">
+          <div class="ps-label sol">✅ Al Nibras Solution</div>
+          <div class="ps-title">Interdisciplinary Curriculum — Finance + Islam + Nature + Business</div>
+          <div class="ps-text">Al Nibras Financial Literacy Curriculum mein ek hi lesson mein math (paisa count karna) + Islamic studies (zakat) + environmental science (zameen ki hifazat) + entrepreneurship (idea banana) sab saath hote hain.</div>
+          <div class="ps-urdu">ہمارا نصاب — ریاضی، اسلامیات، ماحولیات اور کاروبار ایک ساتھ۔</div>
+        </div>
+      </div>
+      <div class="ps-footer">
+        <div class="ps-vertical">
+          <span class="tag tag-gold">🎓 Education</span>
+          <span class="tag tag-teal">📱 App</span>
+        </div>
+        <div class="ps-impact">Curriculum: <strong>4 subjects — 1 lesson — integrated learning</strong></div>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="ps-card" style="animation-delay:0.35s;">
+      <div class="ps-header">
+        <div class="ps-problem">
+          <div class="ps-label prob">❌ Hallucination #7</div>
+          <div class="ps-title">Takabbur — Yaqeen Ka Wham</div>
+          <div class="ps-text">School mein "confidence" sikhaya jata hai — humility nahi. Jise "complete mastery" ka wahm ho jata hai woh dusron ke naqtah-e-nazar ko reject karne lagta hai. Ye ethical decline hai.</div>
+          <div class="ps-urdu">اعتماد سکھایا جاتا ہے — عاجزی نہیں۔ یہ اخلاقی زوال ہے۔</div>
+        </div>
+        <div class="ps-solution">
+          <div class="ps-label sol">✅ Al Nibras Solution</div>
+          <div class="ps-title">Humility-First Design — "Main Ghalat Bhi Ho Sakta Hoon"</div>
+          <div class="ps-text">Al Nibras AI Mentor kabhi final "sahi jawab" nahi deta. Har response mein "aur kya soch sakte ho?" hota hai. Islamic value of tawadu (humility) ko app design mein embed kiya gaya hai. Certificate bhi "learner" title deta hai, not "expert."</div>
+          <div class="ps-urdu">ہمارا AI کبھی حتمی جواب نہیں دیتا — تواضع سکھاتا ہے۔</div>
+        </div>
+      </div>
+      <div class="ps-footer">
+        <div class="ps-vertical">
+          <span class="tag tag-teal">📱 AI Mentor</span>
+          <span class="tag tag-gold">🕌 Islamic Values</span>
+        </div>
+        <div class="ps-impact">Design principle: <strong>Curiosity over certainty — always</strong></div>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="ps-card" style="animation-delay:0.4s;">
+      <div class="ps-header">
+        <div class="ps-problem">
+          <div class="ps-label prob">❌ Hallucination #8</div>
+          <div class="ps-title">Social Mobility Ka Chakkar — Rishte Tutein</div>
+          <div class="ps-text">"Upar jana hai" ki daud mein insaan apne zameen, apne log, apne purane rishte chhor deta hai. Nai jagah ek "ajnabi" ban jata hai. Social capital khatam ho jata hai.</div>
+          <div class="ps-urdu">سماجی ترقی کی دوڑ میں انسان اپنے تعلقات کھو دیتا ہے۔</div>
+        </div>
+        <div class="ps-solution">
+          <div class="ps-label sol">✅ Al Nibras Solution</div>
+          <div class="ps-title">Community-Rooted Model — Lahore Se Pakistan Tak</div>
+          <div class="ps-text">Al Nibras model apni zameen pe — Lahore se shuru. Students apne hi school mein entrepreneur banein. Apni hi mohalla mein stall lagayein. Community mein roots gehre hon — phir scale karein. Ukhad ke nahi, jur ke baro.</div>
+          <div class="ps-urdu">اپنی زمین سے اٹھو — جڑیں مضبوط کرو — پھر بڑھو۔</div>
+        </div>
+      </div>
+      <div class="ps-footer">
+        <div class="ps-vertical">
+          <span class="tag tag-purple">🏛️ NGO</span>
+          <span class="tag tag-gold">🎓 Education</span>
+        </div>
+        <div class="ps-impact">Model: <strong>Hyperlocal first — Lahore pilot — then Pakistan</strong></div>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="ps-card" style="animation-delay:0.45s;">
+      <div class="ps-header">
+        <div class="ps-problem">
+          <div class="ps-label prob">❌ Hallucination #9</div>
+          <div class="ps-title">Technology = Najaatdahinda</div>
+          <div class="ps-text">"AI sab kuch solve kar lega" — ye sochna khud ek hallucination hai. Hamari baqaa zameen, pani, akhlaq, aur insaani taalluq mein hai — machines mein nahi.</div>
+          <div class="ps-urdu">ٹیکنالوجی نجات دہندہ نہیں — انسانیت اور زمین کی حفاظت ضروری ہے۔</div>
+        </div>
+        <div class="ps-solution">
+          <div class="ps-label sol">✅ Al Nibras Solution</div>
+          <div class="ps-title">AI as Tool — Not Replacement</div>
+          <div class="ps-text">Al Nibras Finance mein AI sirf ek tool hai jo human connection ko badhaata hai — replace nahi karta. Parent Coach AI tip deta hai lekin actual conversation parent aur bacha karta hai. Curiosity Engine AI sawaal deta hai — jawab bacha sochta hai.</div>
+          <div class="ps-urdu">AI صرف ایک آلہ ہے — انسانی تعلق کو مضبوط کرتا ہے، بدلتا نہیں۔</div>
+        </div>
+      </div>
+      <div class="ps-footer">
+        <div class="ps-vertical">
+          <span class="tag tag-teal">📱 App Design</span>
+          <span class="tag tag-orange">🤖 AI Ethics</span>
+        </div>
+        <div class="ps-impact">Philosophy: <strong>"AI assists — humans decide — earth is stakeholder"</strong></div>
+      </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="ps-card" style="animation-delay:0.5s;">
+      <div class="ps-header">
+        <div class="ps-problem">
+          <div class="ps-label prob">❌ Hallucination #10</div>
+          <div class="ps-title">Takhwa Se Maharat Milti Hai — Wahm</div>
+          <div class="ps-text">System mein "complete certainty" ka inam diya jata hai. Jo nahi janta — kamzor hai. Jo sawaal kare — disturber hai. Ye model intellectual arrogance ki factory hai.</div>
+          <div class="ps-urdu">مکمل یقین کا وہم — عاجزی کا خاتمہ — تکبر کی فیکٹری۔</div>
+        </div>
+        <div class="ps-solution">
+          <div class="ps-label sol">✅ Al Nibras Solution</div>
+          <div class="ps-title">NGO Workshop — "Main Seekh Raha Hoon" Certificate</div>
+          <div class="ps-text">Al Nibras NGO workshops mein koi "expert" nahi — sab "seekhne wale" hain. Certificate ka naam hai: "Al Nibras Certified Learner" — not "Expert." Workshop facilitator khud kehta hai: "mujhe bhi nahi pata — saath sochtay hain."</div>
+          <div class="ps-urdu">ہماری سند کا نام ہے "سیکھنے والا" — ماہر نہیں۔</div>
+        </div>
+      </div>
+      <div class="ps-footer">
+        <div class="ps-vertical">
+          <span class="tag tag-purple">🏛️ NGO</span>
+          <span class="tag tag-gold">🏆 Certificate</span>
+        </div>
+        <div class="ps-impact">Workshop culture: <strong>Everyone is a learner — facilitator included</strong></div>
+      </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="ps-card" style="animation-delay:0.55s;">
+      <div class="ps-header">
+        <div class="ps-problem">
+          <div class="ps-label prob">❌ Hallucination #11</div>
+          <div class="ps-title">Salary = Maqsad-e-Hayat</div>
+          <div class="ps-text">System ne sikhaya: apni value apni takhwa se napo. Jo sirf takhwa ke liye kaam karta hai — woh is nizam ka mental ghulam ban jata hai. Service ka concept khatam ho gaya hai.</div>
+          <div class="ps-urdu">تنخواہ کو مقصد بنا لینا — خدمت کے جذبے کا خاتمہ ہے۔</div>
+        </div>
+        <div class="ps-solution">
+          <div class="ps-label sol">✅ Al Nibras Solution</div>
+          <div class="ps-title">Service-First Model — "Takhwa Sirf Waseela Hai"</div>
+          <div class="ps-text">Al Nibras NGO ka core philosophy: Student entrepreneurs ko sikhao ke revenue ek tool hai — mission hai community ko financial literacy dena. Abbas Hussain quote app mein daily: "Takhwa sirf khidmat ki jagah tak pohanchne ka zariya hai."</div>
+          <div class="ps-urdu">تنخواہ صرف خدمت کی جگہ تک پہنچنے کا ذریعہ ہے — اصل مقصد خدمت ہے۔</div>
+        </div>
+      </div>
+      <div class="ps-footer">
+        <div class="ps-vertical">
+          <span class="tag tag-purple">🏛️ NGO</span>
+          <span class="tag tag-gold">🕌 Islamic</span>
+          <span class="tag tag-teal">📱 App</span>
+        </div>
+        <div class="ps-impact">Mission: <strong>Service over salary — always</strong></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== THE INTEGRATED LOOP ===== -->
+<section>
+  <div class="sec-eyebrow">The Self-Sustaining System</div>
+  <h2>Ye <em>Loop</em> Hai —<br>Loops <span>Scale Karte Hain</span></h2>
+  <p class="sec-desc">Jab teeno verticals saath kaam karein toh ek self-sustaining growth engine banta hai. Zero paid marketing. Pure value chain.</p>
+
+  <div class="loop-visual">
+    <div class="loop-step">
+      <div class="loop-left">
+        <div class="loop-circle">📖</div>
+        <div class="loop-line"></div>
+      </div>
+      <div class="loop-body">
+        <div class="loop-name">Parent Abbas Hussain content padhta hai</div>
+        <div class="loop-desc">Facebook/Instagram — Al Nibras educational posts. Problem recognition hoti hai.</div>
+        <div class="loop-vertical">→ NGO Content Machine</div>
+      </div>
+    </div>
+    <div class="loop-step">
+      <div class="loop-left">
+        <div class="loop-circle">📱</div>
+        <div class="loop-line"></div>
+      </div>
+      <div class="loop-body">
+        <div class="loop-name">Al Nibras Finance App Download Karta Hai</div>
+        <div class="loop-desc">Free tier. Parent Coach first screen. "Aaj apne bacha se ye sawaal poochho."</div>
+        <div class="loop-vertical">→ Al Nibras Finance App</div>
+      </div>
+    </div>
+    <div class="loop-step">
+      <div class="loop-left">
+        <div class="loop-circle">🎓</div>
+        <div class="loop-line"></div>
+      </div>
+      <div class="loop-body">
+        <div class="loop-name">Mustafai School Mein Curriculum Shuru Hota Hai</div>
+        <div class="loop-desc">Teacher "Al Nibras Money Class" chalata hai. 30 min/week. App se connected.</div>
+        <div class="loop-vertical">→ Al Nibras Education</div>
+      </div>
+    </div>
+    <div class="loop-step">
+      <div class="loop-left">
+        <div class="loop-circle">💡</div>
+        <div class="loop-line"></div>
+      </div>
+      <div class="loop-body">
+        <div class="loop-name">Bacha Curiosity Engine Roz Use Karta Hai</div>
+        <div class="loop-desc">Daily question. AI jawab. Parent dekhta hai. Streak build hoti hai. Badges milte hain.</div>
+        <div class="loop-vertical">→ Al Nibras Finance — Curiosity Engine</div>
+      </div>
+    </div>
+    <div class="loop-step">
+      <div class="loop-left">
+        <div class="loop-circle">🏛️</div>
+        <div class="loop-line"></div>
+      </div>
+      <div class="loop-body">
+        <div class="loop-name">Family NGO Workshop Attend Karti Hai</div>
+        <div class="loop-desc">Monthly event. Certificate milta hai. Community banti hai. Abbas Hussain philosophy live experience.</div>
+        <div class="loop-vertical">→ Al Nibras Group NGO</div>
+      </div>
+    </div>
+    <div class="loop-step">
+      <div class="loop-left">
+        <div class="loop-circle">🏆</div>
+        <div class="loop-line"></div>
+      </div>
+      <div class="loop-body">
+        <div class="loop-name">"Al Nibras Certified Learner" Certificate Milta Hai</div>
+        <div class="loop-desc">Social media pe share hota hai. Friends dekhte hain. "Ye kya hai?" — aur loop shuru ho jata hai.</div>
+        <div class="loop-vertical">→ Organic Viral Growth</div>
+      </div>
+    </div>
+    <div class="loop-step">
+      <div class="loop-left">
+        <div class="loop-circle">🔄</div>
+      </div>
+      <div class="loop-body" style="border-color:var(--teal);background:rgba(10,191,173,0.05);">
+        <div class="loop-name" style="color:var(--teal);">Naya Parent Dekhta Hai → Loop Dobara Shuru</div>
+        <div class="loop-desc">Zero paid marketing. Pure word of mouth. Community se community.</div>
+        <div class="loop-vertical" style="color:var(--gold);">→ Self-sustaining Growth Engine 🔄</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== IMPACT METRICS ===== -->
+<section>
+  <div class="sec-eyebrow">Projected Impact</div>
+  <h2>90 Din Mein <span>Measurable</span> Change</h2>
+
+  <div class="metrics-grid">
+    <div class="metric-card">
+      <div class="m-num">500</div>
+      <div class="m-label">Families</div>
+      <div class="m-sub">Active app users — Month 3</div>
+    </div>
+    <div class="metric-card">
+      <div class="m-num">11</div>
+      <div class="m-label">Problems</div>
+      <div class="m-sub">Abbas Hussain — all addressed</div>
+    </div>
+    <div class="metric-card">
+      <div class="m-num">3</div>
+      <div class="m-label">Verticals</div>
+      <div class="m-sub">NGO + Finance + Education</div>
+    </div>
+    <div class="metric-card">
+      <div class="m-num">₀</div>
+      <div class="m-label">Riba</div>
+      <div class="m-sub">100% Shariah compliant model</div>
+    </div>
+    <div class="metric-card">
+      <div class="m-num">Rs.0</div>
+      <div class="m-label">Marketing Cost</div>
+      <div class="m-sub">Pure community-driven growth</div>
+    </div>
+    <div class="metric-card">
+      <div class="m-num">1st</div>
+      <div class="m-label">Pakistan Mein</div>
+      <div class="m-sub">Islamic Kids Finance + Education ecosystem</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MANIFESTO ===== -->
+<div class="manifesto">
+  <h3>
+    Unhon ne <em>system</em> banaya<br>
+    Humne us ka <em>jawab</em> banaya
+  </h3>
+  <p>
+    Abbas Hussain ne 11 educational hallucinations diagnose kiye. Michael Fullan ne 60 saal baad maafi mangi. Pakistan mein 99% families financial literacy se mehroom hain. Al Nibras Group ne teeno problems ka ek integrated, self-sustaining, Islamic solution banaya — zero investment se, Lahore mein, akele.
+  </p>
+  <div class="urdu-manifesto">
+    انہوں نے مسئلہ بتایا — ہم نے حل بنایا۔ پاکستان کے ہر بچے کو وہ تعلیم دینا جو اسکول نے کبھی نہیں دی۔
+  </div>
+</div>
+
+<!-- ===== 3 VERTICAL BREAKDOWN ===== -->
+<section>
+  <div class="sec-eyebrow">System Architecture</div>
+  <h2>Teeno <em>Verticals</em> — <span>Ek Mission</span></h2>
+
+  <div class="vertical-grid">
+
+    <div class="v-card">
+      <div class="v-card-top">
+        <div class="v-icon" style="background:rgba(139,124,246,0.1);">🏛️</div>
+        <div>
+          <div class="v-name">Al Nibras Group NGO</div>
+          <div class="v-tagline">Operating System — Credibility + Grants + Movement</div>
+          <div class="v-problems" style="margin-top:10px;">
+            <div class="v-p-item solved">Salary-as-purpose hallucination — Service-first model</div>
+            <div class="v-p-item solved">Individual success khabt — Collective community building</div>
+            <div class="v-p-item solved">Expertise arrogance — "Certified Learner" culture</div>
+            <div class="v-p-item solved">Social mobility disconnect — Hyperlocal rooted model</div>
+          </div>
+        </div>
+        <div style="text-align:right;">
+          <div class="tag tag-purple">Umbrella</div>
+        </div>
+      </div>
+      <div class="v-card-bottom">
+        <span class="tag tag-green">Grant Applications</span>
+        <span class="tag tag-teal">Monthly Workshops</span>
+        <span class="tag tag-gold">Certificates</span>
+        <span class="tag tag-purple">Legal Shield</span>
+      </div>
+    </div>
+
+    <div class="v-card">
+      <div class="v-card-top">
+        <div class="v-icon" style="background:rgba(10,191,173,0.1);">📱</div>
+        <div>
+          <div class="v-name">Al Nibras Finance App</div>
+          <div class="v-tagline">Pakistan's First Islamic Kids Banking + AI Education Platform</div>
+          <div class="v-problems" style="margin-top:10px;">
+            <div class="v-p-item solved">Curiosity ko saza — Curiosity Engine daily questions</div>
+            <div class="v-p-item solved">Pehle 10 saal zaya — Age 5 se start karo</div>
+            <div class="v-p-item solved">3 Capitalist curses — Islamic 1/3 rule tracker</div>
+            <div class="v-p-item solved">Humility vs arrogance — AI never gives final answer</div>
+            <div class="v-p-item solved">Tech as savior — AI as tool, human as decision maker</div>
+          </div>
+        </div>
+        <div style="text-align:right;">
+          <div class="tag tag-teal">LIVE ✓</div>
+        </div>
+      </div>
+      <div class="v-card-bottom">
+        <span class="tag tag-teal">Curiosity Engine</span>
+        <span class="tag tag-gold">AI Mentor</span>
+        <span class="tag tag-green">Parent Coach</span>
+        <span class="tag tag-purple">Islamic Finance</span>
+      </div>
+    </div>
+
+    <div class="v-card">
+      <div class="v-card-top">
+        <div class="v-icon" style="background:rgba(232,184,75,0.1);">🎓</div>
+        <div>
+          <div class="v-name">Al Nibras Education</div>
+          <div class="v-tagline">Mustafai School System — Curriculum + Distribution</div>
+          <div class="v-problems" style="margin-top:10px;">
+            <div class="v-p-item solved">School ≠ Learning — Ghar + School + App teeno</div>
+            <div class="v-p-item solved">Knowledge separation — Interdisciplinary curriculum</div>
+            <div class="v-p-item solved">Linear progress — Self-paced modular learning</div>
+            <div class="v-p-item solved">Propaganda history — Critical thinking modules</div>
+          </div>
+        </div>
+        <div style="text-align:right;">
+          <div class="tag tag-gold">Secret Weapon</div>
+        </div>
+      </div>
+      <div class="v-card-bottom">
+        <span class="tag tag-gold">7 Modules</span>
+        <span class="tag tag-teal">App Integration</span>
+        <span class="tag tag-green">Teacher Dashboard</span>
+        <span class="tag tag-orange">Free Distribution</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== TIMELINE ===== -->
+<section>
+  <div class="sec-eyebrow">Execution Roadmap</div>
+  <h2><span>Kal Se</span> — <em>Step by Step</em></h2>
+
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-left">
+        <div class="tl-phase">Phase 1</div>
+        <div class="tl-days">0–30</div>
+      </div>
+      <div class="tl-center"><div class="tl-dot" style="background:var(--teal);"></div></div>
+      <div class="tl-body">
+        <div class="tl-title">🌱 Foundation — Real Users Pehle</div>
+        <div class="tl-items">
+          <div class="tl-i"><strong>Mustafai School principal se meeting</strong> — free pilot proposal</div>
+          <div class="tl-i"><strong>50 parents personally WhatsApp</strong> — app download karwao</div>
+          <div class="tl-i"><strong>Meezan Bank CSR email</strong> — partnership proposal</div>
+          <div class="tl-i"><strong>First workshop date fix karo</strong> — NGO movement shuru</div>
+          <div class="tl-i"><strong>50 families feedback collect karo</strong> — Google Form</div>
+        </div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-left">
+        <div class="tl-phase">Phase 2</div>
+        <div class="tl-days">30–60</div>
+      </div>
+      <div class="tl-center"><div class="tl-dot" style="background:var(--gold);"></div></div>
+      <div class="tl-body">
+        <div class="tl-title">⚡ Momentum — System Ko Activate Karo</div>
+        <div class="tl-items">
+          <div class="tl-i"><strong>200 active users</strong> — app mein user auth add karo</div>
+          <div class="tl-i"><strong>School pilot officially start</strong> — 2 classes, 60 students</div>
+          <div class="tl-i"><strong>First grant application submit</strong> — SMEDA ya Ignite</div>
+          <div class="tl-i"><strong>Dawn Education reporter</strong> — story pitch karo</div>
+          <div class="tl-i"><strong>Curriculum Module 1-3 complete</strong> — Paisa, Halal, Bachana</div>
+        </div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-left">
+        <div class="tl-phase">Phase 3</div>
+        <div class="tl-days">60–90</div>
+      </div>
+      <div class="tl-center"><div class="tl-dot" style="background:var(--green);"></div></div>
+      <div class="tl-body">
+        <div class="tl-title">🚀 Proof — Numbers Se Story Banao</div>
+        <div class="tl-items">
+          <div class="tl-i"><strong>500 active users milestone</strong> — celebrate + document</div>
+          <div class="tl-i"><strong>2 school partnerships</strong> — Rs. 30,000 first revenue</div>
+          <div class="tl-i"><strong>Impact report publish</strong> — "500 families, 90 days"</div>
+          <div class="tl-i"><strong>Google AI Academy apply</strong> — traction numbers ready</div>
+          <div class="tl-i"><strong>Singapore IGNITE application</strong> — SFF 2026 target</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-logo">Al Nibras Group</div>
+  <div class="footer-sub">NGO · Finance · Education — Pakistan ka jawab</div>
+  <div class="footer-urdu">النیبراس گروپ — پاکستان کے بچوں کا مستقبل</div>
+</footer>
+
+</div>
+</body>
+</html>

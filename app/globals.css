@@ -1,0 +1,331 @@
+@font-face {
+  font-family: 'Jameel Noori Nastaleeq';
+  src: url('https://cdn.jsdelivr.net/npm/jameel-noori@1.1.2/JameelNooriNastaleeq.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/npm/jameel-noori@1.1.2/JameelNooriNastaleeq.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/npm/jameel-noori@1.1.2/JameelNooriNastaleeq.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "tailwindcss";
+
+.font-nastaleeq {
+  font-family: 'Jameel Noori Nastaleeq', 'Jamil Noori Nastaleeq', serif;
+}
+
+/* Global Urdu Font family and layout overrides to prevent Nastaleeq vertical clipping */
+html[lang="ur"] {
+  font-family: 'Jameel Noori Nastaleeq', 'Jamil Noori Nastaleeq', serif !important;
+  line-height: 2.4 !important;
+}
+
+html[lang="ur"] * {
+  font-family: 'Jameel Noori Nastaleeq', 'Jamil Noori Nastaleeq', serif !important;
+  line-height: 2.4 !important;
+}
+
+/* Enforce responsive vertical padding cushions globally on text elements under Urdu engine */
+html[lang="ur"] h1,
+html[lang="ur"] h2,
+html[lang="ur"] h3,
+html[lang="ur"] h4,
+html[lang="ur"] h5,
+html[lang="ur"] h6,
+html[lang="ur"] p,
+html[lang="ur"] span,
+html[lang="ur"] li,
+html[lang="ur"] a,
+html[lang="ur"] button {
+  padding-top: 0.75rem !important;    /* py-3 vertical padding cushion */
+  padding-bottom: 0.75rem !important; /* py-3 vertical padding cushion */
+  margin-top: 0.25rem !important;     /* my-1 layout margin protection */
+  margin-bottom: 0.25rem !important;  /* my-1 layout margin protection */
+}
+
+@media (min-width: 768px) {
+  html[lang="ur"] h1,
+  html[lang="ur"] h2,
+  html[lang="ur"] h3,
+  html[lang="ur"] h4,
+  html[lang="ur"] h5,
+  html[lang="ur"] h6,
+  html[lang="ur"] p,
+  html[lang="ur"] span,
+  html[lang="ur"] li,
+  html[lang="ur"] a,
+  html[lang="ur"] button {
+    padding-top: 0.5rem !important;    /* py-2 vertical padding cushion on md/desktop viewports */
+    padding-bottom: 0.5rem !important; /* py-2 vertical padding cushion on md/desktop viewports */
+  }
+}
+
+/* Force fluid height scaling under Urdu state to prevent absolute/fixed height truncations */
+html[lang="ur"] [class*="h-"],
+html[lang="ur"] [class*="max-h-"] {
+  height: auto !important;
+  max-height: none !important;
+}
+
+/* Class-Based Light/Dark Theme Custom Color Variables */
+:root {
+  /* LIGHT THEME VARIABLES */
+  --bg-radial-start: #F9F8F3;
+  --bg-radial-end: #F9F8F3;
+  --text-main: #1A1A1A;
+  
+  --color-primary-dark: #F9F8F3;
+  --color-card-dark: #FFFFFF;
+  --color-text-light: #1A1A1A;
+  --color-text-dark: #4A4A4A;
+  --color-border-gold: rgba(212, 175, 55, 0.15);
+  --color-bg-light: #FFFFFF;
+  
+  --color-accent-gold: #AA8015;
+  --color-brand-text-gold: #AA8015;
+  --color-brand-text-bone: #1A1A1A;
+  --color-brand-accent-inspire: #00808B;
+  
+  --background: #F9F8F3;
+  --foreground: #1A1A1A;
+}
+
+/* Default Dark Mode is Active */
+.dark {
+  /* DARK THEME VARIABLES */
+  --bg-radial-start: #38220F;
+  --bg-radial-end: #111111;
+  --text-main: #FBFBF6;
+  
+  --color-primary-dark: #111111;
+  --color-card-dark: #1A120B;
+  --color-text-light: #FBFBF6;
+  --color-text-dark: #1E120A;
+  --color-border-gold: rgba(212, 175, 55, 0.25);
+  --color-bg-light: #FBFBF6;
+  
+  --color-accent-gold: #D4AF37;
+  --color-brand-text-gold: #D4AF37;
+  --color-brand-text-bone: #FBFBF6;
+  --color-brand-accent-inspire: #00F2FE;
+  
+  --background: #111111;
+  --foreground: #FBFBF6;
+}
+
+@theme {
+  --color-primary-dark: var(--color-primary-dark);
+  --color-accent-gold: var(--color-accent-gold);
+  --color-brand-text-gold: var(--color-brand-text-gold);
+  --color-brand-text-bone: var(--color-brand-text-bone);
+  --color-brand-accent-inspire: var(--color-brand-accent-inspire);
+  
+  --color-text-dark: var(--color-text-dark);
+  --color-text-light: var(--color-text-light);
+  --color-border-gold: var(--color-border-gold);
+  --color-card-dark: var(--color-card-dark);
+  --color-bg-light: var(--color-bg-light);
+  
+  --font-heading: var(--font-playfair), "Playfair Display", serif;
+  --font-body: var(--font-dm-sans), "DM Sans", sans-serif;
+  --font-urdu: 'Jameel Noori Nastaleeq', 'Jamil Noori Nastaleeq', 'Noto Nastaliq Urdu', sans-serif;
+  
+  --animate-shine: shine 8s linear infinite;
+  --animate-pulse-slow: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-spin-slow: spin 20s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+/* Custom animations */
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+}
+
+:root {
+  /* Smooth scrolls */
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle, var(--bg-radial-start) 0%, var(--bg-radial-end) 100%) fixed;
+  color: var(--text-main);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+/* Rebrand flat section backdrops to use fixed brand-canvas */
+.bg-primary-dark {
+  background: radial-gradient(circle, var(--bg-radial-start) 0%, var(--bg-radial-end) 100%) fixed !important;
+}
+
+/* Premium Specular Metallic Gold Reflection Effects with Turquoise Glow Hovers */
+.metallic-text {
+  background: linear-gradient(
+    135deg,
+    #D4AF37 0%,
+    #FFF5CE 25%,
+    #AA8015 50%,
+    #F6DF7D 75%,
+    #D4AF37 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.35));
+  animation: shine 8s linear infinite;
+  transition: all 0.3s ease;
+}
+
+.metallic-text:hover {
+  text-shadow: 0 0 15px rgba(0, 242, 254, 0.6);
+  filter: drop-shadow(0px 1px 3px rgba(0, 242, 254, 0.5));
+}
+
+.metallic-border {
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.metallic-border:hover, .metallic-border:focus-within {
+  border-color: #00F2FE !important;
+  box-shadow: 0 0 25px rgba(0, 242, 254, 0.35) !important;
+}
+
+.metallic-text-silver {
+  background: linear-gradient(
+    135deg,
+    #cfd9df 0%,
+    #e2ebf0 25%,
+    #a6b1b7 50%,
+    #f3f7f9 75%,
+    #cfd9df 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.2));
+  animation: shine 12s linear infinite;
+}
+
+.metallic-icon {
+  background: linear-gradient(
+    135deg,
+    #D4AF37 0%,
+    #FFF5CE 35%,
+    #AA8015 70%,
+    #D4AF37 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 2px 4px rgba(212, 175, 55, 0.25));
+  animation: shine 8s linear infinite;
+  transition: all 0.3s ease;
+}
+
+.metallic-icon:hover {
+  filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.75));
+}
+
+/* Glassmorphism custom layouts with Radiant Turquoise interactive glows */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dark .glass-panel {
+  background: rgba(26, 18, 11, 0.45);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.glass-panel:hover {
+  border-color: rgba(0, 242, 254, 0.35);
+  box-shadow: 0 15px 45px rgba(0, 242, 254, 0.08), 0 0 15px rgba(0, 242, 254, 0.04);
+}
+
+.glass-nav {
+  background: rgba(249, 248, 243, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.dark .glass-nav {
+  background: rgba(17, 17, 17, 0.85);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.glass-button {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-button:hover {
+  background: rgba(0, 242, 254, 0.08);
+  border-color: #00F2FE;
+  color: #00F2FE;
+  box-shadow: 0 8px 30px rgba(0, 242, 254, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Custom layout scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border: 3px solid #111111;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F6DF7D;
+}
+

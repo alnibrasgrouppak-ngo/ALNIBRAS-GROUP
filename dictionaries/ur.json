@@ -1,0 +1,500 @@
+{
+  "navbar": {
+    "title": "النبراس گروپ",
+    "home": "ہوم",
+    "about": "ہمارے بارے میں",
+    "verticals": "شعبہ جات",
+    "capabilities": "مہارتیں",
+    "finance": "فنانس ایپ",
+    "insights": "بلاگ بصیرت",
+    "contact": "رابطہ کریں",
+    "join": "مشن میں شامل ہوں"
+  },
+  "footer": {
+    "desc": "پاکستان کے فلیگ شپ خود کفیل اسکول ٹو بزنس مائیکرو اکنامک انفراسٹرکچر لوپ بنانا۔",
+    "navTitle": "ایکوسسٹم نیویگیشن",
+    "connectTitle": "بصیرت اور رابطہ",
+    "homeHub": "ہوم ہب",
+    "founderVision": "بانی اور وژن",
+    "operationalVerticals": "عملی شعبہ جات",
+    "groupCapabilities": "گروپ کی صلاحیتیں",
+    "financeApp": "النبراس فنانس ایپ",
+    "editorialInsights": "ادارتی بصیرت",
+    "connectStrategically": "اسٹریٹجک رابطہ",
+    "liveFinanceAlpha": "لائیو فنانس الفا",
+    "rights": "© 2026 النبراس گروپ۔ رجسٹرڈ سوشل انٹرپرائز، لاہور، پاکستان۔ جملہ حقوق محفوظ ہیں۔",
+    "sitemap": "سائٹ میپ",
+    "privacy": "رازداری کا فریم ورک"
+  },
+  "common": {
+    "headquarters": "ہیڈ کوارٹر لاہور، پاکستان میں ہے"
+  },
+  "home": {
+    "tagline": "سوشل انٹرپرائز ایکوسسٹم",
+    "headline": "پاکستان کا پہلا اسکول ٹو بزنس پائپ لائن",
+    "sub": "ہم ایک انقلابی، خود کفیل لوپ بنا کر انحصار کے چکر کو توڑ رہے ہیں جو بنیادی سیکھنے کو پائیدار ڈیجیٹل انٹرپرائز میں بدل دیتا ہے۔",
+    "ctaJoin": "مشن میں شامل ہوں",
+    "ctaExplore": "ہمارے لوپ کو دریافت کریں",
+    "stat1": "سسٹمیٹک مداخلت کے ذریعے اسکول سے باہر کے نوجوانوں کو بااختیار بنایا گیا",
+    "stat2": "باہم مربوط آپریشنل ورٹیکلز بغیر کسی رکاوٹ کے چل رہے ہیں",
+    "stat3": "غیر ملکی خیرات سے آزاد خود کفیل اقتصادی چکر",
+    "ecoTitle": "خود کفیل ایکوسسٹم",
+    "ecoSub": "النبراس گروپ بنیادی تعلیم اور پریمیم مالیاتی خود مختاری کے درمیان لوپ کو کس طرح بند کرتا ہے۔",
+    "flow": {
+      "s1": {
+        "title": "1. اسکول",
+        "desc": "مصطفائی اسکول سسٹم بہترین بنیادی تعلیم اور جدید ترین ٹیکنالوجی کی واقفیت فراہم کرتا ہے۔"
+      },
+      "s2": {
+        "title": "2. فنانس",
+        "desc": "بچے ڈیجیٹل مائیکرو سیونگز اور معیشت سیکھنے کے لیے ہماری حلال بینکنگ ایپ استعمال کرتے ہیں۔"
+      },
+      "s3": {
+        "title": "3. بزنس",
+        "desc": "اسٹوڈنٹ آپریٹرز پروگرام انہیں فعال تکنیکی میدانوں میں کام کرنے کے قابل بناتا ہے۔"
+      },
+      "s4": {
+        "title": "4. آمدنی",
+        "desc": "کمائی گئی کاروباری آمدنی براہ راست اسکول ایکوسسٹم کو فنڈز دیتی ہے اور پھیلاتی ہے۔"
+      }
+    },
+    "verticalsTitle": "ہمارے بنیادی شعبہ جات",
+    "verticalsSub": "شروع سے ہی ایک خود انحصار معیشت بنانے کے لیے ہاتھ ملا کر کام کرنے کے لیے ڈیزائن کیا گیا ہے۔",
+    "bentoCards": {
+      "c1": {
+        "title": "النبراس ایجوکیشن",
+        "desc": "لاہور میں مصطفائی اسکول سسٹم کو بہترین پرائمری تعلیم اور اہم ڈیجیٹل خواندگی کے اثاثوں کے ساتھ طاقت دینا۔",
+        "cta": "سسٹم کا گہرائی سے مطالعہ کریں"
+      },
+      "c2": {
+        "title": "النبراس فنانس",
+        "desc": "پاکستانی نوجوانوں کی ترقی کے لیے خاص طور پر تیار کردہ گیمیفائیڈ شریعت کے مطابق مائیکرو سیونگز اور ڈیجیٹل اثاثہ جات کی ایپ۔",
+        "cta": "ایپ ایکوسسٹم دریافت کریں"
+      },
+      "c3": {
+        "title": "النبراس ٹیکنالوجی",
+        "desc": "ہمارے جامع اسٹوڈنٹ آپریٹرز پروگرام کے ذریعے تھیوری اور مارکیٹوں کے درمیان فاصلے کو ختم کرنا جو انٹرپرائز پائپ لائنز قائم کرتا ہے۔",
+        "cta": "آپریٹر کی تفصیلات دیکھیں"
+      }
+    },
+    "testimonial": "\"النبراس گروپ پاکستان کے نوجوانوں کے بڑے طبقے کے لیے خیرات پر مبنی امداد سے نکال کر اسٹریٹجک کاروباری بااختیار بنانے کی طرف راغب کر رہا ہے۔\"",
+    "testimonialAuthor": "ایکوسسٹم انسائٹ رپورٹ — لاہور",
+    "ctaTitle": "پاکستانی ڈیجیٹل انٹرپرائز کے مستقبل کی حمایت کے لیے تیار ہیں؟",
+    "ctaSub": "بطور پارٹنر، وینچر بلڈر، یا ایکوسسٹم کے ساتھی کے طور پر ہمارے ساتھ ہاتھ ملائیں۔",
+    "ctaBtn": "النبراس سے رابطہ کریں"
+  },
+  "about": {
+    "heroTitle": "ہمارا ڈی این اے اور وژن",
+    "heroSub": "ایسے انجن بنانا جو مستقل امداد کو حقیقی مالی مہارت سے بدل دیں۔",
+    "storyTitle": "بانی کی کہانی",
+    "storyP1": "فیضان گیلانی نے لاہور میں النبراس گروپ کی شروعات ایک اکیلے بلڈر کے طور پر کی، جو معیاری غیر منافع بخش نظاموں کی سسٹمیٹک خامیوں سے شدید پریشان تھے۔ نسل در نسل معاشی خود مختاری پیدا کیے بغیر قلیل مدتی فریم ورک میں اربوں امدادی ڈالر بہتے دیکھ کر، انہوں نے ایک ایسا پائپ لائن بنانے کا عزم کیا جو طالب علم کی ترقی کو طویل مدتی سرمایہ کاری کے اثاثے کے طور پر پیش کرے۔",
+    "storyP2": "پریمیم ماڈرن اسکولنگ فریم ورک کو براہ راست ایک ملکیتی ڈیجیٹل فنانشل اسٹیک اور ہائی ٹکٹ مائیکرو ایجنسیوں کے ساتھ جوڑ کر، النبراس خام صلاحیت کو براہ راست اعلی کارکردگی والے آپریشنز میں بدل دیتا ہے۔",
+    "timelineTitle": "ایکوسسٹم کی ترقی کے سنگ میل",
+    "timelineSub": "اکیلی سوچ سے لے کر باقاعدہ پائپ لائن تک ہمارے سفر کا سٹرکچرڈ روڈ میپ۔",
+    "milestones": {
+      "m1": {
+        "year": "2023",
+        "title": "بلیو پرنٹ آرکیٹیکچر",
+        "desc": "فیضان گیلانی نے غیر مستحکم بیرونی خیراتی فنڈز پر انحصار ختم کرنے کے لیے مکمل بند لوپ ماڈل کا تصور پیش کیا۔"
+      },
+      "m2": {
+        "year": "2024",
+        "title": "مصطفائی اسکول سسٹم الائنمنٹ",
+        "desc": "مقامی پرائمری سیٹ اپس کے ساتھ عملی تعاون حاصل کیا تاکہ مقامی ڈیجیٹل واقفیت کے نصاب کو متعارف کرایا جا سکے۔"
+      },
+      "m3": {
+        "year": "2025",
+        "title": "النبراس فنانس آرکیٹیکچر",
+        "desc": "بچوں کی بینکنگ ایپلیکیشن اسٹیک کا ابتدائی بیٹا بلڈ تیار کر کے لائیو مائیکرو سیونگز کا پائلٹ شروع کیا۔"
+      },
+      "m4": {
+        "year": "2026",
+        "title": "اسٹوڈنٹ آپریٹر اسکیلنگ",
+        "desc": "حقیقی ڈیجیٹل اثاثہ جات کی پائپ لائنز میں کارپوریٹ موجودگی کو بڑھانا جو مکمل طور پر ایڈوانسڈ طلباء کے ذریعے منظم ہوتی ہیں۔"
+      }
+    },
+    "quoteUrdu": "ہمیں تعلیم کو درست کرنے کے لیے خیرات کی ضرورت نہیں ہے؛ ہمیں ایک ایسے خود کفیل نظام کی ضرورت ہے جہاں ہمارے نوجوان خود کمانا، بچانا اور اپنے مستقبل میں سرمایہ کاری کرنا سیکھیں۔",
+    "quoteEnglish": "ہمیں تعلیم کو درست کرنے کے لیے خیرات کی ضرورت نہیں؛ ہمیں ایک خود کفیل نظام چاہیے جہاں ہمارے نوجوان کمانا، بچانا، اور اپنے مستقبل میں سرمایہ کاری کرنا سیکھیں۔",
+    "quoteAuthor": "— عباس حسین، اسٹریٹجک مشیر",
+    "manifesto": {
+      "ecoPhilosophy": "ایکوسسٹم کا فلسفہ",
+      "titlePrefix": "عباس حسین × النبراس:",
+      "hallucinations": "تعلیمی مغالطے",
+      "solutions": "باغیانہ حل",
+      "sub": "ول رچرڈسن اور عباس حسین نے پاکستان کے تعلیمی نظام کے گہرے نقائص کی نشاندہی کی۔ النبراس گروپ ٹھوس نظامی حل پیش کرتا ہے۔",
+      "solutionLabel": "النبراس کا حل",
+      "items": {
+        "m1": {
+          "hallucinationNumber": "غلط فہمی #1",
+          "problemTitle": "Curiosity Ko Saza — Jawab Ko Inam",
+          "problemText": "Nizam-e-taleem mein sirf ratta maar jawab ko marks milte hain. Sawaal poochhna \"disturbance\" samjha jata hai. Bachay ki fitri learning ki taqat kuchli jaati hai.",
+          "problemUrdu": "نظام میں سوال پوچھنا سزا ہے — رٹا مارنا انعام ہے۔",
+          "solutionTitle": "Curiosity Engine — Roz Ek Naya Sawaal",
+          "solutionText": "Al Nibras Finance app mein daily AI-powered question jo bacha khud sochke jawab de. Koi \"wrong answer\" nahi. Har jawab celebrate hota hai. Sawaal poochhna = points milna.",
+          "solutionUrdu": "ہمارے نظام میں سوال پوچھنا = پوائنٹس ملنا۔",
+          "tags": [
+            "Finance App",
+            "Education"
+          ],
+          "impactQuote": "Abbas Hussain: \"Celebrate curiosity, not answers\""
+        },
+        "m2": {
+          "hallucinationNumber": "غلط فہمی #2",
+          "problemTitle": "School = Learning Ka Jhooth",
+          "problemText": "Michael Fullan ne 60 saal baad maana: \"I was wrong — quality education cannot be scaled through schools.\" Phir bhi parents aankhein band karke school pe bharosa karte hain.",
+          "problemUrdu": "اسکول اور سیکھنے کا کوئی لازمی تعلق نہیں ہے۔",
+          "solutionTitle": "Ghar + School + App — Teeno Mila Ke",
+          "solutionText": "Al Nibras model mein asli learning teeno jagah hoti hai: Mustafai School (structured), Al Nibras Finance app (daily practice), aur ghar (parent coach module). School akela nahi — ek hissa hai.",
+          "solutionUrdu": "گھر + اسکول + ایپ — تینوں مل کر سیکھنا ممکن ہے۔",
+          "tags": [
+            "NGO",
+            "Education",
+            "App"
+          ],
+          "impactQuote": "Michael Fullan 2025: \"Scaling quality education is impossible\""
+        },
+        "m3": {
+          "hallucinationNumber": "غلط فہمی #3",
+          "problemTitle": "Pehle 10 Saal Zaya",
+          "problemText": "Life ke pehle 10 saal personality ki buniyaad banate hain — lekin in saalon mein koi financial literacy nahi sikhaya jata. Ye gap poori zindagi ka financial behavior decide karta hai.",
+          "problemUrdu": "پہلے دس سال شخصیت کی بنیاد بناتے ہیں — یہ سال ضائع ہو رہے ہیں۔",
+          "solutionTitle": "Age 5 Se Shuru — Al Nibras Finance",
+          "solutionText": "App specifically 5-17 age group ke liye design kiya gaya hai. 3 age tiers: 5-8, 9-12, 13-17. Har stage pe age-appropriate Islamic financial concepts. Parents ghar pe role model banein — Parent Coach module se.",
+          "solutionUrdu": "ہم پانچ سال کی عمر سے مالی تعلیم شروع کرتے ہیں۔",
+          "tags": [
+            "Finance App",
+            "Parent Coach"
+          ],
+          "impactQuote": "Target: \"Age 5–17 — Pehle 10 saal sahi karo\""
+        },
+        "m4": {
+          "hallucinationNumber": "غلط فہمی #4",
+          "problemTitle": "Capitalism Ki 3 Laanaten",
+          "problemText": "\"Kharidar\" banaya ja raha hai har Pakistani ko. Depression ka ilaj shopping — yeh system ne seekhaya. Paisa aata hai, usi waqt uda diya jata hai kyunki savari aur khushi ka taalluq banaya gaya hai.",
+          "problemUrdu": "آسائش، سہولت اور خریداری — یہ تین لعنتیں انسان کو صارف بنا رہی ہیں۔",
+          "solutionTitle": "Islamic 1/3 Rule + Financial Tracker",
+          "solutionText": "Al Nibras Finance mein har pocket money 3 hisson mein divide hoti hai: 1/3 apne liye, 1/3 dusron ke liye (sadqa), 1/3 kal ke liye (saving). Ye Islamic principle + behavior design = anti-consumption habit se bachpan mein.",
+          "solutionUrdu": "اسلامی ایک تہائی اصول — خریداری نہیں، بچت اور خدمت سکھائیں۔",
+          "tags": [
+            "Finance App",
+            "Islamic Finance"
+          ],
+          "impactQuote": "Core principle: \"Bachat aur sadqa — kharidar nahi banana\""
+        },
+        "m5": {
+          "hallucinationNumber": "غلط فہمی #5",
+          "problemTitle": "Individual Success Ka Khabt",
+          "problemText": "School ki diwar pe sirf \"First Position\" ka photo lagta hai. Collective growth, teamwork, aur community ka koi concept nahi. Har bacha akela jeet chahta hai — sab ke nuksan pe.",
+          "problemUrdu": "صرف فرسٹ آنے والے کی تصویر لگتی ہے — اجتماعی ترقی کا کوئی تصور نہیں۔",
+          "solutionTitle": "Community Badges + Student Entrepreneur",
+          "solutionText": "Al Nibras mein badges sirf individual nahi — \"Community Builder\" badge milta hai jab bacha dusron ko seekhata hai. NGO ka student entrepreneur model team-based hai. Ek student 5 ko sikhaye — sab ko points milein.",
+          "solutionUrdu": "ہمارے نظام میں دوسروں کو سکھانا سب سے بڑا انعام ہے۔",
+          "tags": [
+            "NGO",
+            "App"
+          ],
+          "impactQuote": "Model: \"Peer learning = extra points — community wins\""
+        },
+        "m6": {
+          "hallucinationNumber": "غلط فہمی #6",
+          "problemTitle": "Knowledge Ki Taqseem — Subjects Alag",
+          "problemText": "Math alag, Science alag, Social Studies alag. Creativity aur innovation tab hoti hai jab ye khane aapaas mein milein. Lekin school ne deewarein khadi kar rakhi hain.",
+          "problemUrdu": "علم کو خانوں میں بانٹنا تخلیقی صلاحیت کو ختم کر دیتا ہے۔",
+          "solutionTitle": "Interdisciplinary Curriculum",
+          "solutionText": "Al Nibras Financial Literacy Curriculum mein ek hi lesson mein math (paisa count karna) + Islamic studies (zakat) + environmental science (zameen ki hifazat) + entrepreneurship (idea banana) sab saath hote hain.",
+          "solutionUrdu": "ہمارا نصاب — ریاضی، اسلامیات، ماحولیات اور کاروبار ایک ساتھ۔",
+          "tags": [
+            "Education",
+            "App"
+          ],
+          "impactQuote": "Curriculum: \"4 subjects — 1 lesson — integrated learning\""
+        },
+        "m7": {
+          "hallucinationNumber": "غلط فہمی #7",
+          "problemTitle": "Takabbur — Yaqeen Ka Wham",
+          "problemText": "School mein \"confidence\" sikhaya jata hai — humility nahi. Jise \"complete mastery\" ka wahm ho jata hai woh dusron ke naqtah-e-nazar ko reject karne lagta hai. Ye ethical decline hai.",
+          "problemUrdu": "اعتماد سکھایا جاتا ہے — عاجزی نہیں۔ یہ اخلاقی زوال ہے۔",
+          "solutionTitle": "Humility-First Design — \"Main Ghalat...\"",
+          "solutionText": "Al Nibras AI Mentor kabhi final \"sahi jawab\" nahi deta. Har response mein \"aur kya soch sakte ho?\" hota hai. Islamic value of tawadu (humility) ko app design mein embed kiya gaya hai. Certificate bhi \"learner\" title deta hai, not \"expert.\"",
+          "solutionUrdu": "ہمارا AI کبھی حتمی جواب نہیں دیتا — تواضع سکھاتا ہے۔",
+          "tags": [
+            "AI Mentor",
+            "Islamic Values"
+          ],
+          "impactQuote": "Design principle: \"Curiosity over certainty — always\""
+        },
+        "m8": {
+          "hallucinationNumber": "غلط فہمی #8",
+          "problemTitle": "Social Mobility Ka Chakkar",
+          "problemText": "\"Upar jana hai\" ki daud mein insaan apne zameen, apne log, apne purane rishte chhor deta hai. Nai jagah ek \"ajnabi\" ban jata hai. Social capital khatam ho jata hai.",
+          "problemUrdu": "سماجی ترقی کی دوڑ میں انسان اپنے تعلقات کھو دیتا ہے۔",
+          "solutionTitle": "Community-Rooted Model",
+          "solutionText": "Al Nibras model apni zameen pe — Lahore se shuru. Students apne hi school mein entrepreneur banein. Apni hi mohalla mein stall lagayein. Community mein roots gehre hon — phir scale karein. Ukhad ke nahi, jur ke baro.",
+          "solutionUrdu": "اپنی زمین سے اٹھو — جڑیں مضبوط کرو — پھر بڑھو۔",
+          "tags": [
+            "NGO",
+            "Education"
+          ],
+          "impactQuote": "Model: \"Hyperlocal first — Lahore pilot — then Pakistan\""
+        },
+        "m9": {
+          "hallucinationNumber": "غلط فہمی #9",
+          "problemTitle": "Technology = Najaatdahinda",
+          "problemText": "\"AI sab kuch solve kar lega\" — ye sochna khud ek hallucination hai. Hamari baqaa zameen, pani, akhlaq, aur insaani taalluq mein hai — machines mein nahi.",
+          "problemUrdu": "ٹیکنالوجی نجات دہندہ نہیں — انسانیت اور زمین کی حفاظت ضروری ہے۔",
+          "solutionTitle": "AI as Tool — Not Replacement",
+          "solutionText": "Al Nibras Finance mein AI sirf ek tool hai jo human connection ko badhaata hai — replace nahi karta. Parent Coach AI tip deta hai lekin actual conversation parent aur bacha karta hai. Curiosity Engine AI sawaal deva hai — jawab bacha sochta hai.",
+          "solutionUrdu": "AI صرف ایک آلہ ہے — انسانی تعلق کو مضبوط کرتا ہے، بدلتا نہیں۔",
+          "tags": [
+            "App Design",
+            "AI Ethics"
+          ],
+          "impactQuote": "Philosophy: \"AI assists — humans decide — earth is stakeholder\""
+        },
+        "m10": {
+          "hallucinationNumber": "غلط فہمی #10",
+          "problemTitle": "Takhwa Se Maharat Milti Hai — Wahm",
+          "problemText": "System mein \"complete certainty\" ka inam diya jata hai. Jo nahi janta — kamzor hai. Jo sawaal kare — disturber hai. Ye model intellectual arrogance ki factory hai.",
+          "problemUrdu": "مکمل یقین کا وہم — عاجزی کا خاتمہ — تکبر کی فیکٹری۔",
+          "solutionTitle": "Workshop — \"Learner\" Certificate",
+          "solutionText": "Al Nibras NGO workshops mein koi \"expert\" nahi — sab \"seekhne wale\" hain. Certificate ka naam hai: \"Al Nibras Certified Learner\" — not \"Expert.\" Workshop facilitator khud kehta hai: \"mujhe bhi nahi pata — saath sochtay hain.\"",
+          "solutionUrdu": "ہمارِی سند کا نام ہے \"سیکھنے والا\" — ماہر نہیں۔",
+          "tags": [
+            "NGO",
+            "Certificate"
+          ],
+          "impactQuote": "Workshop culture: \"Everyone is a learner — facilitator included\""
+        },
+        "m11": {
+          "hallucinationNumber": "غلط فہمی #11",
+          "problemTitle": "Salary = Maqsad-e-Hayat",
+          "problemText": "System ne sikhaya: apni value apni takhwa se napo. Jo sirf takhwa ke liye kaam karta hai — woh is nizam ka mental ghulam ban jata hai. Service ka concept khatam ho gaya hai.",
+          "problemUrdu": "تنخواہ کو مقصد بنا لینا — خدمت کے جذبے کا خاتمہ ہے۔",
+          "solutionTitle": "Service-First — \"Waseela Hai\"",
+          "solutionText": "Al Nibras NGO ka core philosophy: Student entrepreneurs ko sikhao ke revenue ek tool hai — mission hai community ko financial literacy dena. Abbas Hussain quote app mein daily: \"Takhwa sirf khidmat ki jagah tak pohanchne ka zariya hai.\"",
+          "solutionUrdu": "تنخواہ صرف خدمت کی جگہ تک پہنچنے کا ذریعہ ہے — اصل مقصد خدمت ہے۔",
+          "tags": [
+            "NGO",
+            "Islamic Principles",
+            "App"
+          ],
+          "impactQuote": "Mission: \"Service over salary — always\""
+        }
+      }
+    }
+  },
+  "verticals": {
+    "heroTitle": "تین بنیادی ستون",
+    "heroSub": "شعبہ جات کا ایک پریسجن انجن جو بنیادی خواندگی کو مارکیٹ پلیس کے اثرات میں بدل دیتا ہے۔",
+    "pillars": {
+      "p1": {
+        "title": "النبراس ایجوکیشن",
+        "tagline": "مصطفائی اسکول سسٹم الائنمنٹ",
+        "desc": "مصطفائی اسکول سسٹم کے تصدیق شدہ فریم ورکس کے ذریعے کام کرتے ہوئے، یہ ستون وضاحت کرتا ہے کہ غیر مراعات یافتہ خاندانوں کے لیے ابتدائی اسکولنگ کس طرح ہونی چاہیے۔ ہم روایتی سائنس اور ریڈنگ ٹریکس کو خصوصی بنیادی منطقی تربیت اور ابتدائی انٹرفیس خواندگی کے ساتھ تکمیل کرتے ہیں۔",
+        "b1": "اپنی مرضی کے مطابق منطقی اور ساختی نصاب کی تہیں",
+        "b2": "ہینڈز آن ڈیجیٹل ڈیوائس آپریشنز لیبز",
+        "b3": "گہری بنیادی کردار سازی اور اخلاقیات کی نگرانی"
+      },
+      "p2": {
+        "title": "النبراس فنانس",
+        "tagline": "100% حلال شریعت اصول",
+        "desc": "حتمی آپریشنل پل۔ ہمارے بچوں کا حلال بینکنگ فریم ورک تجریدی اقتصادی نظریات کو فوری فعال روزانہ مشق میں بدل دیتا ہے۔ محفوظ، نقلی، اور آڈٹ شدہ اثاثہ رکھنے کے طریقہ کار کے ذریعے، بچے مائیکرو قرض کے جال کے بغیر اثاثوں کی نمو کا تجربہ کرتے ہیں۔",
+        "b1": "مکمل طور پر بلا سود، شریعت کے اصولوں پر مبنی ڈیزائن لوپ",
+        "b2": "گیمیفائیڈ ٹاسکس جو تعلیمی فضیلت کو براہ راست مائیکرو ریوارڈز سے جوڑتے ہیں",
+        "b3": "ہمارے الفا نوڈ پر فعال لائیو آرکیٹیکچر میٹرکس",
+        "linkText": "ایپ شوکیس دیکھیں"
+      },
+      "p3": {
+        "title": "النبراس ٹیکنالوجی",
+        "tagline": "اسٹوڈنٹ آپریٹرز پروگرام",
+        "desc": "ہمارا پریمیم ٹرمینل انجن۔ ہمارے انتہائی سخت اسٹوڈنٹ آپریٹرز پروگرام کے ذریعے، ایڈوانسڈ امیدواروں کو خصوصی داخلی مائیکرو ایجنسیوں میں تفویض کیا جاتا ہے جو عالمی سطح پر ڈیجیٹل پروجیکٹس کے لیے حقیقی دنیا کے آپریشنل ورک فلوز انجام دیتی ہیں۔",
+        "b1": "انٹرپرائز ڈیجیٹل مینجمنٹ ورک فلوز (نو کوڈ ایگزیکیوشن، ڈیٹا آپس)",
+        "b2": "براہ راست حقیقی دنیا کے ریونیو چینلز جو قدر کو سیدھا ہولڈنگ لوپ میں واپس کرتے ہیں",
+        "b3": "تجربہ کار ٹیک آپریٹرز کی طرف سے اعلی کارکردگی والی مینٹرشپ میچنگ"
+      }
+    }
+  },
+  "finance": {
+    "halalBadge": "100% شریعت کے مطابق فریم ورک",
+    "heroTitle": "اگلی نسل کا مائیکرو سیونگز انجن",
+    "heroSub": "النبراس فنانس نوجوان نسل میں اہم اثاثہ جات کے انتظام اور معاشی خواندگی کو ان کے موبائل اسکرینوں کے ذریعے پیدا کرتا ہے۔",
+    "ctaAlpha": "لائیو ایپ الفا دیکھیں",
+    "ctaDemo": "ڈیمو کی درخواست کریں",
+    "featuresTitle": "حتمی مالیاتی خواندگی کے لیے ڈیزائن کیا گیا",
+    "featuresSub": "قیاس آرائی پر مبنی ڈیجیٹل ڈھانچے سے ہٹ کر جسمانی اثاثہ کی ملکیت اور گہری مقامی معلومات کی ٹریکنگ کی طرف منتقل ہونا۔",
+    "mockup": {
+      "title": "النبراس فنانس",
+      "walletLabel": "مصطفائی اسٹوڈنٹ والیٹ",
+      "status": "حلال انعامات ایکٹو",
+      "questTitle": "دستیاب مشنز",
+      "quest1": "لاوجک بلاک 4 مکمل کریں",
+      "quest2": "پوری حاضری کا ہفتہ",
+      "quest3": "پیئر مینٹرشپ کا گھنٹہ",
+      "reset": "دوبارہ شروع کریں",
+      "tapSimulate": "*سیکھنے کی تصدیق کی نقل کرنے اور مائیکرو انعامات کمانے کے لیے اسکرین کے مشنز پر ٹیپ کریں۔",
+      "time": "11:05 صبح",
+      "currency": "روپے",
+      "rewardPrefix": "+روپے"
+    },
+    "featuresList": {
+      "f1": {
+        "title": "گیمیفائیڈ ایکشن لوپ",
+        "desc": "طلباء تعلیمی ماڈیولز مکمل کرنے پر براہ راست مالی انعامی میٹرکس حاصل کرتے ہیں، جس سے علم کے حصول کی نفسیاتی تصدیق یقینی ہوتی ہے۔"
+      },
+      "f2": {
+        "title": "بلا سود فریم ورک",
+        "desc": "سخت اثاثوں پر مبنی معاشی اصولوں کے تحت ڈیزائن کیا گیا ہے۔ کسی قسم کے قیاس آرائی پر مبنی میٹرکس یا قرض کی تخلیق کے لوپس موجود نہیں ہیں۔"
+      },
+      "f3": {
+        "title": "والدین کے حفاظتی انتظامات",
+        "desc": "خاندان کے مضبوط اجازت نامہ کے ڈھانچے کے ساتھ مل کر مکمل ادارہ جاتی نگرانی نوجوان صارفین کے لیے ایک محفوظ ترین ڈیٹا کی جگہ کو یقینی بناتی ہے۔"
+      }
+    }
+  },
+  "skills": {
+    "badge": "عملی صلاحیتیں",
+    "heroTitle": "ہماری بنیادی مہارتیں",
+    "heroSub": "تکنیکی بنیادوں، ڈیجیٹل ترقی کی مہارتوں، اور فنانشل انجینئرنگ کے نمونوں کو دریافت کریں جو النبراس گروپ کے ماحول کو طاقت دیتے ہیں۔",
+    "gridBadge": "صلاحیتوں کا میٹرکس",
+    "gridTitle": "پریمیم عملی طاقتیں",
+    "gridSub": "ہم انجینئرنگ کی مہارت کو براہ راست مارکیٹنگ کے نظام کے ساتھ جوڑتے ہیں تاکہ اعلی کارکردگی والے عملی یونٹ بنا سکیں۔",
+    "ctaTitle": "ہمارے آپریشنل انفراسٹرکچر کے ساتھ ہم آہنگ ہوں",
+    "ctaSub": "ہم سرگرمی سے سرمایہ کاری کے اداروں، اسٹریٹجک مشیروں، اور ڈویلپرز کے ساتھ تعاون کرتے ہیں جو فل اسٹیک ڈیجیٹل پائپ لائنز کو استعمال کرنا چاہتے ہیں۔",
+    "ctaBtn": "آپریشنل کنکشن کا آغاز کریں",
+    "verticalLabel": "عملی شعبہ",
+    "coreDisciplines": "بنیادی شعبہ جات",
+    "ecosystemFrameworks": "ایکوسسٹم فریم ورکس",
+    "categories": {
+      "c1": {
+        "title": "ڈیجیٹل مارکیٹنگ اور لیڈ جنریشن آٹومیشن",
+        "desc": "لیڈ پاتھ ویز کو خودکار بنانے اور ترقی کے عمل کو ہموار کرنے کے لیے جدید ترین کلاؤڈ آرکیٹیکچرز کا استعمال۔",
+        "skills": {
+          "s1": "خودکار کسٹمر پائپ لائنز اور لیڈ کیپچر",
+          "s2": "ملٹی سورس API سنکرونائزیشنز",
+          "s3": "مصنوعی ذہانت سے چلنے والے گفتگو کے ورک فلوز",
+          "s4": "ڈائنامک CRM سنکرونائزیشن لوپس"
+        },
+        "levels": {
+          "expert": "ماہر",
+          "advanced": "اعلیٰ"
+        },
+        "tools": {
+          "t1": "n8n.io",
+          "t2": "Make.com",
+          "t3": "HubSpot CRM",
+          "t4": "Zapier",
+          "t5": "Meta API"
+        }
+      },
+      "c2": {
+        "title": "گروتھ مارکیٹنگ اسٹریٹیجیز اور Next.js ایپلیکیشن انجینئرنگ",
+        "desc": "سٹرکچرڈ گروتھ میٹرکس اور انٹرایکٹو صارف برقرار رکھنے کے عناصر کے ساتھ مربوط تیز رفتار ویب اثاثے بنانا۔",
+        "skills": {
+          "s1": "فل اسٹیک ری ایکٹ اور Next.js کور انجینئرنگ",
+          "s2": "ایس ای او آپٹیمائزیشن اور لائٹ ہاؤس پیج اسپیڈ ٹیوننگ",
+          "s3": "اے/بی ٹیسٹنگ اور مائیکرو انٹرایکشن ڈیزائن",
+          "s4": "ڈائنامک لے آؤٹ موشن اینیمیشنز"
+        },
+        "levels": {
+          "expert": "ماہر",
+          "advanced": "اعلیٰ"
+        },
+        "tools": {
+          "t1": "Next.js (App Router)",
+          "t2": "TypeScript",
+          "t3": "Tailwind CSS",
+          "t4": "Framer Motion",
+          "t5": "Vercel Analytics"
+        }
+      },
+      "c3": {
+        "title": "شریعت کے مطابق مائیکرو سیونگز فن ٹیک آرکیٹیکچر",
+        "desc": "بچوں کی مالیاتی خواندگی کے لیے تیار کردہ گیمیفائیڈ شریعت کے مطابق ڈیجیٹل والیٹس اور پروڈکٹ سوئٹس ڈیزائن کرنا۔",
+        "skills": {
+          "s1": "شریعت کے مطابق ڈیجیٹل لیجر کی تفصیلات",
+          "s2": "گیمیفائیڈ بچت انعامات کے میکانکس",
+          "s3": "محفوظ موبائل فرسٹ سینڈ باکس ٹیسٹنگ",
+          "s4": "پروڈکٹ مینجمنٹ اور پیرنٹ چائلڈ اکاؤنٹ لوپس"
+        },
+        "levels": {
+          "expert": "ماہر",
+          "advanced": "اعلیٰ"
+        },
+        "tools": {
+          "t1": "پروڈکٹ کی تفصیلات",
+          "t2": "فگما پروٹو ٹائپنگ",
+          "t3": "اسلامک فنانس فریم ورکس",
+          "t4": "یو ایکس وائر فلیمنگ"
+        }
+      }
+    }
+  },
+  "contact": {
+    "heroTitle": "آئیے رابطہ کریں",
+    "heroSub": "سرمایہ، وسائل، یا خصوصی تکنیکی تربیتی نیٹ ورک لگانے کے لیے ہمارے ساتھ شراکت کریں۔",
+    "panelTitle": "رابطے میں رہیں",
+    "panelSub": "خواہ آپ سرمایہ کاری کے گروپ، تعلیمی فریم ورک، یا ٹیکنالوجی ایکوسسٹم کی نمائندگی کرتے ہوں، ہم تعاون کے مواقع کا جائزہ لینے کے منتظر ہیں۔",
+    "location": "مقام",
+    "locationVal": "لاہور، پنجاب، پاکستان",
+    "email": "ای میل مواصلات",
+    "emailVal": "ops@al-nibras-group.com",
+    "whatsapp": "براہ راست واٹس ایپ پر رابطہ کریں",
+    "follow": "ہماری ترقی کی پیروی کریں",
+    "labelName": "آپ کا نام",
+    "labelEmail": "ای میل ایڈریس",
+    "labelAlignment": "شراکت کا شعبہ",
+    "labelMessage": "پیغام کی تفصیلات",
+    "btnSubmit": "اسٹریٹجک پیغام بھیجیں",
+    "successTitle": "اسٹریٹجک پیغام موصول ہو گیا",
+    "successSub": "شکریہ! النبراس گروپ کا مواصلاتی شعبہ جلد ہی جواب دے گا۔",
+    "formRefreshing": "5 سیکنڈ میں فارم دوبارہ ترتیب دیا جا رہا ہے...",
+    "optionPartnership": "ایکوسسٹم پارٹنرشپ",
+    "optionInvestment": "وینچر کیپیٹل / سرمایہ کاری الائنمنٹ",
+    "optionMentorship": "ٹیکنالوجی مینٹرشپ ٹریک",
+    "optionGeneral": "عمومی استفسار",
+    "placeholderName": "فیضان احمد",
+    "placeholderEmail": "faizan@enterprise.pk",
+    "placeholderMessage": "بیان کریں کہ آپ النبراس پائپ لائن کے ساتھ کس طرح تعاون کرنا چاہیں گے..."
+  },
+  "blog": {
+    "heroTitle": "ایکوسسٹم بصیرت",
+    "heroSub": "ہمارے ریسرچ پیپرز، تصوراتی خاکے، اور اپ ڈیٹس براہ راست ہمارے لاہور کے ہیڈ کوارٹر سے۔",
+    "catAll": "تمام بصیرت",
+    "catEducation": "تعلیم",
+    "catFinance": "فنانس",
+    "catTech": "ٹیک",
+    "catImpact": "سماجی اثرات",
+    "readMore": "مکمل بریف پڑھیں",
+    "byAuthor": "از",
+    "posts": {
+      "p1": {
+        "categoryLabel": "سماجی اثرات",
+        "date": "15 مئی 2026",
+        "author": "فیضان گیلانی",
+        "title": "خیرات کے جال کو توڑنا: پاکستان کو پائیدار سماجی پائپ لائنز کی کیوں ضرورت ہے",
+        "description": "کلاسک فلاحی ماڈلز کا گہرائی سے تجزیہ اور ساختی اسکول ٹو بزنس نیٹ ورکس حقیقی اقتصادی قدر کو مقامی طور پر کیسے برقرار رکھتے ہیں۔"
+      },
+      "p2": {
+        "categoryLabel": "فنانس",
+        "date": "28 اپریل 2026",
+        "author": "فن ٹیک ڈیسک",
+        "title": "اگلی نسل کے لیے فن ٹیک: گیمیفائیڈ بینکنگ مالیاتی خواندگی کو کیسے آگے بڑھاتی ہے",
+        "description": "لاہور میں نوجوانوں کے گروپس میں النبراس فنانس الفا ایپلیکیشن کی تعیناتی سے جمع کیے گئے رویے کے ڈیٹا سیٹس کا تجزیہ۔"
+      },
+      "p3": {
+        "categoryLabel": "ٹیک",
+        "date": "12 اپریل 2026",
+        "author": "سسٹمز ٹیم",
+        "title": "اسٹوڈنٹ آپریٹرز پروگرام کا آرکیٹیکچر",
+        "description": "ہم کس طرح محفوظ طریقے سے پیچیدہ سافٹ ویئر مینجمنٹ اور پروجیکٹ پیرامیٹرز کو تجرید کی تہہ میں لاتے ہیں تاکہ ہائی اسکول کے طلباء حقیقی پروڈکشن ٹاسکس کو مکمل طور پر انجام دے سکیں۔"
+      },
+      "p4": {
+        "categoryLabel": "تعلیم",
+        "date": "22 مارچ 2026",
+        "author": "مصطفائی ڈیسک",
+        "title": "لاہور کے ٹیک ایکوسسٹم میں نصاب کے ڈھانچے پر نظرثانی",
+        "description": "ہمارے پرائمری اسکول کی کلاس رومز میں لاگو کی گئی جدید ترین عملی ایڈاپٹیشنز کا جامع جائزہ تاکہ حقیقی مائیکرو ایجنسیوں کو فروغ دیا جا سکے۔"
+      }
+    }
+  }
+}

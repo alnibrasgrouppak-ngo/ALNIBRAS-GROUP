@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://al-nibras-group.com",
+    url: "https://alnibras.pk",
     title: "Al Nibras Group — Pakistan's School-to-Business Ecosystem",
     description: "Al Nibras Group builds Pakistan's first self-sustaining education-finance loop — connecting Mustafai School System, Al Nibras Finance App, and real business ventures.",
     siteName: "Al Nibras Group",
@@ -69,8 +69,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Al Nibras Group",
-    "url": "https://al-nibras-group.com",
-    "logo": "https://al-nibras-group.com/logo.png",
+    "url": "https://alnibras.pk",
+    "logo": "https://alnibras.pk/logo.png",
     "description": "Al Nibras Group builds Pakistan's first self-sustaining education-finance loop — connecting Mustafai School System, Al Nibras Finance App, and real business ventures.",
     "address": {
       "@type": "PostalAddress",

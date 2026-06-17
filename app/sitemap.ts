@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://al-nibras-group.com";
+  const baseUrl = "https://alnibras.pk";
 
   // Explicitly reference all 12 system routes including the 7 core pages
   // alongside operational sub-modules and standard auxiliary pathways

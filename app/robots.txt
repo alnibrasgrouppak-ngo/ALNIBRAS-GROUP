@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://al-nibras-group.com/sitemap.xml
+Sitemap: https://alnibras.pk/sitemap.xml

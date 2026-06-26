@@ -134,7 +134,7 @@ export default function Verticals() {
                     <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-xl border border-neutral-300 dark:border-white/5 bg-primary-dark/5 group">
                       <Image
                         src={pillar.img}
-                        alt=""
+                        alt={t(pillar.titleKey)}
                         fill
                         sizes="(max-w-768px) 100vw, 50vw"
                         className="object-cover transition-transform duration-700 group-hover:scale-103 opacity-90 group-hover:opacity-100"

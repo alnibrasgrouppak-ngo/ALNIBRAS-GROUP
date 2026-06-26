@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Jameel Noori Nastaleeq';
   src: url('https://cdn.jsdelivr.net/npm/jameel-noori@1.1.2/JameelNooriNastaleeq.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/npm/jameel-noori@1.1.2/JameelNooriNastaleeq.woff') format('woff'),
-       url('https://cdn.jsdelivr.net/npm/jameel-noori@1.1.2/JameelNooriNastaleeq.ttf') format('truetype');
+    url('https://cdn.jsdelivr.net/npm/jameel-noori@1.1.2/JameelNooriNastaleeq.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/npm/jameel-noori@1.1.2/JameelNooriNastaleeq.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -37,13 +37,18 @@ html[lang="ur"] span,
 html[lang="ur"] li,
 html[lang="ur"] a,
 html[lang="ur"] button {
-  padding-top: 0.75rem !important;    /* py-3 vertical padding cushion */
-  padding-bottom: 0.75rem !important; /* py-3 vertical padding cushion */
-  margin-top: 0.25rem !important;     /* my-1 layout margin protection */
-  margin-bottom: 0.25rem !important;  /* my-1 layout margin protection */
+  padding-top: 0.75rem !important;
+  /* py-3 vertical padding cushion */
+  padding-bottom: 0.75rem !important;
+  /* py-3 vertical padding cushion */
+  margin-top: 0.25rem !important;
+  /* my-1 layout margin protection */
+  margin-bottom: 0.25rem !important;
+  /* my-1 layout margin protection */
 }
 
 @media (min-width: 768px) {
+
   html[lang="ur"] h1,
   html[lang="ur"] h2,
   html[lang="ur"] h3,
@@ -55,8 +60,10 @@ html[lang="ur"] button {
   html[lang="ur"] li,
   html[lang="ur"] a,
   html[lang="ur"] button {
-    padding-top: 0.5rem !important;    /* py-2 vertical padding cushion on md/desktop viewports */
-    padding-bottom: 0.5rem !important; /* py-2 vertical padding cushion on md/desktop viewports */
+    padding-top: 0.5rem !important;
+    /* py-2 vertical padding cushion on md/desktop viewports */
+    padding-bottom: 0.5rem !important;
+    /* py-2 vertical padding cushion on md/desktop viewports */
   }
 }
 
@@ -73,19 +80,19 @@ html[lang="ur"] [class*="max-h-"] {
   --bg-radial-start: #F9F8F3;
   --bg-radial-end: #F9F8F3;
   --text-main: #1A1A1A;
-  
+
   --color-primary-dark: #F9F8F3;
   --color-card-dark: #FFFFFF;
   --color-text-light: #1A1A1A;
   --color-text-dark: #4A4A4A;
   --color-border-gold: rgba(212, 175, 55, 0.15);
   --color-bg-light: #FFFFFF;
-  
+
   --color-accent-gold: #AA8015;
   --color-brand-text-gold: #AA8015;
   --color-brand-text-bone: #1A1A1A;
   --color-brand-accent-inspire: #00808B;
-  
+
   --background: #F9F8F3;
   --foreground: #1A1A1A;
 }
@@ -96,19 +103,19 @@ html[lang="ur"] [class*="max-h-"] {
   --bg-radial-start: #38220F;
   --bg-radial-end: #111111;
   --text-main: #FBFBF6;
-  
+
   --color-primary-dark: #111111;
   --color-card-dark: #1A120B;
   --color-text-light: #FBFBF6;
   --color-text-dark: #1E120A;
   --color-border-gold: rgba(212, 175, 55, 0.25);
   --color-bg-light: #FBFBF6;
-  
+
   --color-accent-gold: #D4AF37;
   --color-brand-text-gold: #D4AF37;
   --color-brand-text-bone: #FBFBF6;
   --color-brand-accent-inspire: #00F2FE;
-  
+
   --background: #111111;
   --foreground: #FBFBF6;
 }
@@ -119,17 +126,17 @@ html[lang="ur"] [class*="max-h-"] {
   --color-brand-text-gold: var(--color-brand-text-gold);
   --color-brand-text-bone: var(--color-brand-text-bone);
   --color-brand-accent-inspire: var(--color-brand-accent-inspire);
-  
+
   --color-text-dark: var(--color-text-dark);
   --color-text-light: var(--color-text-light);
   --color-border-gold: var(--color-border-gold);
   --color-card-dark: var(--color-card-dark);
   --color-bg-light: var(--color-bg-light);
-  
+
   --font-heading: var(--font-playfair), "Playfair Display", serif;
   --font-body: var(--font-dm-sans), "DM Sans", sans-serif;
   --font-urdu: 'Jameel Noori Nastaleeq', 'Jamil Noori Nastaleeq', 'Noto Nastaliq Urdu', sans-serif;
-  
+
   --animate-shine: shine 8s linear infinite;
   --animate-pulse-slow: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   --animate-spin-slow: spin 20s linear infinite;
@@ -141,19 +148,24 @@ html[lang="ur"] [class*="max-h-"] {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
 
 @keyframes pulse-slow {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.2;
     transform: scale(1);
   }
+
   50% {
     opacity: 0.4;
     transform: scale(1.05);
@@ -161,9 +173,12 @@ html[lang="ur"] [class*="max-h-"] {
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     transform: translateY(-12px) rotate(3deg);
   }
@@ -172,6 +187,7 @@ html[lang="ur"] [class*="max-h-"] {
 :root {
   /* Smooth scrolls */
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {
@@ -188,14 +204,12 @@ body {
 
 /* Premium Specular Metallic Gold Reflection Effects with Turquoise Glow Hovers */
 .metallic-text {
-  background: linear-gradient(
-    135deg,
-    #D4AF37 0%,
-    #FFF5CE 25%,
-    #AA8015 50%,
-    #F6DF7D 75%,
-    #D4AF37 100%
-  );
+  background: linear-gradient(135deg,
+      #D4AF37 0%,
+      #FFF5CE 25%,
+      #AA8015 50%,
+      #F6DF7D 75%,
+      #D4AF37 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -216,20 +230,19 @@ body {
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.metallic-border:hover, .metallic-border:focus-within {
+.metallic-border:hover,
+.metallic-border:focus-within {
   border-color: #00F2FE !important;
   box-shadow: 0 0 25px rgba(0, 242, 254, 0.35) !important;
 }
 
 .metallic-text-silver {
-  background: linear-gradient(
-    135deg,
-    #cfd9df 0%,
-    #e2ebf0 25%,
-    #a6b1b7 50%,
-    #f3f7f9 75%,
-    #cfd9df 100%
-  );
+  background: linear-gradient(135deg,
+      #cfd9df 0%,
+      #e2ebf0 25%,
+      #a6b1b7 50%,
+      #f3f7f9 75%,
+      #cfd9df 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -240,13 +253,11 @@ body {
 }
 
 .metallic-icon {
-  background: linear-gradient(
-    135deg,
-    #D4AF37 0%,
-    #FFF5CE 35%,
-    #AA8015 70%,
-    #D4AF37 100%
-  );
+  background: linear-gradient(135deg,
+      #D4AF37 0%,
+      #FFF5CE 35%,
+      #AA8015 70%,
+      #D4AF37 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -329,3 +340,41 @@ body {
   background: #F6DF7D;
 }
 
+/* Skip to content link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #D4AF37;
+  color: #111111;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 0 0 0.5rem 0.5rem;
+  z-index: 9999;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Gold gradient utilities */
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #38220F 0%, #AA8015 50%, #D4AF37 100%);
+}
+.dark .bg-gold-gradient {
+  background: linear-gradient(135deg, #1A120B 0%, #AA8015 50%, #D4AF37 100%);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}

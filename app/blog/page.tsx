@@ -147,7 +147,7 @@ export default function Blog() {
                   <div className="relative h-48 w-full overflow-hidden bg-primary-dark/5">
                     <Image
                       src={post.img}
-                      alt=""
+                      alt={t(post.titleKey)}
                       fill
                       sizes="(max-w-768px) 100vw, (max-w-1200px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"

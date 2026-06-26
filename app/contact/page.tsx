@@ -97,7 +97,7 @@ export default function Contact() {
               {/* Dynamic Redirects & Social Link lists */}
               <div className="mt-12 space-y-6">
                 <a
-                  href="https://wa.me/923000000000"
+                  href="https://wa.me/923312627716"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded border border-accent-gold bg-accent-gold text-primary-dark font-extrabold text-sm uppercase tracking-wider transition-all duration-300 hover:bg-transparent hover:text-accent-gold hover:shadow-lg hover:shadow-accent-gold/20"
@@ -112,7 +112,7 @@ export default function Contact() {
                   </span>
                   <div className="flex space-x-3">
                     <a
-                      href="https://linkedin.com"
+                      href="https://www.linkedin.com/in/alnibrasgroup/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 hover:border-accent-gold hover:text-accent-gold hover:bg-accent-gold/5 transition-all duration-300"
@@ -123,7 +123,7 @@ export default function Contact() {
                       </svg>
                     </a>
                     <a
-                      href="https://facebook.com"
+                      href="https://www.facebook.com/alnibrasorg"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 hover:border-accent-gold hover:text-accent-gold hover:bg-accent-gold/5 transition-all duration-300"

@@ -72,7 +72,7 @@ export default function Verticals() {
       </section>
 
       {/* 2. PILLARS DETAIL BLOCKS */}
-      <section className="bg-white text-primary-dark">
+      <section className="bg-white dark:bg-primary-dark text-primary-dark dark:text-text-light">
         {pillars.map((pillar, index) => {
           const Icon = pillar.icon;
           const isEven = index % 2 === 1;
@@ -81,7 +81,7 @@ export default function Verticals() {
             <div
               key={pillar.id}
               className={`py-24 px-4 sm:px-6 lg:px-8 border-b border-neutral-300/60 dark:border-accent-gold/15 ${
-                isEven ? "bg-neutral-50" : "bg-white"
+                isEven ? "bg-neutral-50 dark:bg-white/[0.02]" : "bg-white dark:bg-primary-dark"
               }`}
             >
               <div className="mx-auto max-w-7xl">

@@ -73,7 +73,7 @@ export default function Navbar() {
                 src="/logo.new.jpg"
                 alt="Al Nibras Group logo"
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110 animate-shine"
+                className="object-cover scale-[1.45] transition-transform duration-500 group-hover:scale-[1.55] animate-shine"
                 priority
               />
             </div>

@@ -16,7 +16,7 @@ export default function Footer() {
                   src="/logo.new.jpg"
                   alt="Al Nibras Group logo"
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="object-cover scale-[1.45] transition-transform duration-500 group-hover:scale-[1.55]"
                 />
               </div>
               <span className="font-heading text-2xl font-bold tracking-tight text-accent-gold group-hover:brightness-110 transition-all duration-300">

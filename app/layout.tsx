@@ -243,7 +243,6 @@ export default function RootLayout({
         <meta name="theme-color" content="#111111" />
         <meta name="msapplication-TileColor" content="#111111" />
         <link rel="canonical" href="https://alnibras.pk/" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         {/* Google Analytics Placeholder */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
         <script

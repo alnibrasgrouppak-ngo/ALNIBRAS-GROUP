@@ -2,18 +2,19 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Menu, X, ArrowUpRight, Sun, Moon } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useI18n } from "@/components/I18nContext";
 import { useTheme } from "@/components/ThemeContext";
 
 const NAV_LINKS = [
-  { key: "Home", href: "#home" },
-  { key: "Ecosystem", href: "#ecosystem" },
-  { key: "Verticals", href: "#verticals" },
-  { key: "Impact", href: "#impact" },
-  { key: "FAQ", href: "#faq" },
-  { key: "Contact", href: "#contact" },
+  { key: "Home", href: "/#home" },
+  { key: "Ecosystem", href: "/#ecosystem" },
+  { key: "Verticals", href: "/verticals" },
+  { key: "Impact", href: "/#impact" },
+  { key: "FAQ", href: "/#faq" },
+  { key: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -24,7 +25,9 @@ export default function Navbar() {
 
   // Scroll spy: detect which section is currently in view
   useEffect(() => {
-    const sectionIds = NAV_LINKS.map((l) => l.href.replace("#", ""));
+    const sectionIds = NAV_LINKS
+      .filter((l) => l.href.startsWith("/#"))
+      .map((l) => l.href.replace("/#", ""));
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -51,13 +54,8 @@ export default function Navbar() {
     };
   }, []);
 
-  const handleClick = (href: string) => {
+  const handleClick = () => {
     setIsOpen(false);
-    const id = href.replace("#", "");
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
   };
 
   return (
@@ -65,35 +63,35 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo container */}
-          <a
-            href="#home"
-            onClick={(e) => { e.preventDefault(); handleClick("#home"); }}
+          <Link
+            href="/#home"
+            onClick={handleClick}
             className="flex items-center gap-3 group"
           >
-            <div className="relative w-9 h-11 shrink-0 overflow-visible">
+            <div className="relative w-12 h-12 shrink-0 overflow-hidden rounded-full border border-accent-gold/30 shadow-sm">
               <Image
-                src="/logo-icon.svg"
+                src="/logo.new.jpg"
                 alt="Al Nibras Group logo"
                 fill
-                className="object-contain transition-transform duration-500 group-hover:scale-105 animate-shine"
+                className="object-cover transition-transform duration-500 group-hover:scale-110 animate-shine"
                 priority
               />
             </div>
             <span className="font-heading text-lg sm:text-xl font-bold tracking-tight text-accent-gold group-hover:brightness-110 transition-all duration-300">
               {t("navbar.title")}
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6" aria-label="Main navigation">
             {NAV_LINKS.map((link) => {
-              const sectionId = link.href.replace("#", "");
+              const sectionId = link.href.replace("/#", "");
               const isActive = activeSection === sectionId;
               return (
-                <a
+                <Link
                   key={link.key}
                   href={link.href}
-                  onClick={(e) => { e.preventDefault(); handleClick(link.href); }}
+                  onClick={handleClick}
                   className={`text-sm font-medium tracking-wide transition-all duration-300 relative py-2 ${
                     isActive
                       ? "text-accent-gold"
@@ -109,7 +107,7 @@ export default function Navbar() {
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
                   )}
-                </a>
+                </Link>
               );
             })}
 
@@ -131,13 +129,13 @@ export default function Navbar() {
             </button>
 
             {/* CTA */}
-            <a
-              href="#contact"
-              onClick={(e) => { e.preventDefault(); handleClick("#contact"); }}
+            <Link
+              href="/contact"
+              onClick={handleClick}
               className="inline-flex items-center justify-center gap-1.5 px-4 py-2 border border-accent-gold bg-accent-gold/5 text-xs font-semibold tracking-wider text-accent-gold rounded uppercase transition-all duration-300 hover:bg-brand-accent-inspire hover:text-primary-dark hover:border-brand-accent-inspire hover:shadow-lg hover:shadow-brand-accent-inspire/30 hover:-translate-y-[2px]"
             >
               {t("navbar.join")} <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
-            </a>
+            </Link>
           </nav>
 
           {/* Mobile Controls */}
@@ -182,13 +180,13 @@ export default function Navbar() {
           >
             <nav className="space-y-1 px-4 py-6 sm:px-6" aria-label="Mobile navigation">
               {NAV_LINKS.map((link) => {
-                const sectionId = link.href.replace("#", "");
+                const sectionId = link.href.replace("/#", "");
                 const isActive = activeSection === sectionId;
                 return (
-                  <a
+                  <Link
                     key={link.key}
                     href={link.href}
-                    onClick={(e) => { e.preventDefault(); handleClick(link.href); }}
+                    onClick={handleClick}
                     className={`block py-3 px-4 rounded text-base font-medium tracking-wide transition-all duration-300 ${
                       isActive
                         ? "text-accent-gold bg-accent-gold/5 border-l-2 border-accent-gold"
@@ -197,17 +195,17 @@ export default function Navbar() {
                     aria-current={isActive ? "true" : undefined}
                   >
                     {link.key}
-                  </a>
+                  </Link>
                 );
               })}
               <div className="pt-4 border-t border-accent-gold/15 mt-4 px-4">
-                <a
-                  href="#contact"
-                  onClick={(e) => { e.preventDefault(); handleClick("#contact"); }}
+                <Link
+                  href="/contact"
+                  onClick={handleClick}
                   className="flex items-center justify-center gap-2 w-full py-3 bg-accent-gold text-neutral-950 font-bold text-sm rounded tracking-wider uppercase transition-all duration-300 hover:bg-brand-accent-inspire hover:text-neutral-950 shadow-md shadow-brand-accent-inspire/15"
                 >
                   {t("navbar.join")} <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-                </a>
+                </Link>
               </div>
             </nav>
           </motion.div>

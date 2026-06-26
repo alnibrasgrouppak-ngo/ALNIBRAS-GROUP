@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import T from "@/components/T";
 
@@ -9,19 +10,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 pb-12 border-b border-neutral-300 dark:border-white/10">
           {/* Column 1: Logo / Brand */}
           <div className="flex flex-col space-y-4">
-            <a href="#home" className="flex items-center gap-3.5 group self-start">
-              <div className="relative w-11 h-14 shrink-0 overflow-visible">
+            <Link href="/#home" className="flex items-center gap-3.5 group self-start">
+              <div className="relative w-14 h-14 shrink-0 overflow-hidden rounded-full border border-accent-gold/20 shadow-sm">
                 <Image
-                  src="/logo-icon.svg"
+                  src="/logo.new.jpg"
                   alt="Al Nibras Group logo"
                   fill
-                  className="object-contain transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <span className="font-heading text-2xl font-bold tracking-tight text-accent-gold group-hover:brightness-110 transition-all duration-300">
                 <T k="navbar.title" />
               </span>
-            </a>
+            </Link>
             <p className="text-sm text-neutral-600 dark:text-text-light/85 max-w-sm font-light leading-relaxed">
               <T k="footer.desc" />
             </p>
@@ -83,29 +84,29 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a href="#home" className="text-sm text-neutral-600 dark:text-text-light/75 hover:text-accent-gold hover:pl-1 transition-all duration-300 font-light block">
+                <Link href="/#home" className="text-sm text-neutral-600 dark:text-text-light/75 hover:text-accent-gold hover:pl-1 transition-all duration-300 font-light block">
                   <T k="footer.homeHub" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#ecosystem" className="text-sm text-neutral-600 dark:text-text-light/75 hover:text-accent-gold hover:pl-1 transition-all duration-300 font-light block">
+                <Link href="/#ecosystem" className="text-sm text-neutral-600 dark:text-text-light/75 hover:text-accent-gold hover:pl-1 transition-all duration-300 font-light block">
                   Ecosystem Loop
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#verticals" className="text-sm text-neutral-600 dark:text-text-light/75 hover:text-accent-gold hover:pl-1 transition-all duration-300 font-light block">
+                <Link href="/verticals" className="text-sm text-neutral-600 dark:text-text-light/75 hover:text-accent-gold hover:pl-1 transition-all duration-300 font-light block">
                   <T k="footer.operationalVerticals" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#impact" className="text-sm text-neutral-600 dark:text-text-light/75 hover:text-accent-gold hover:pl-1 transition-all duration-300 font-light block">
+                <Link href="/#impact" className="text-sm text-neutral-600 dark:text-text-light/75 hover:text-accent-gold hover:pl-1 transition-all duration-300 font-light block">
                   Impact Stats
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#faq" className="text-sm text-neutral-600 dark:text-text-light/75 hover:text-accent-gold hover:pl-1 transition-all duration-300 font-light block">
+                <Link href="/#faq" className="text-sm text-neutral-600 dark:text-text-light/75 hover:text-accent-gold hover:pl-1 transition-all duration-300 font-light block">
                   FAQ
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -117,14 +118,14 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a href="/blog/" className="text-sm text-neutral-600 dark:text-text-light/75 hover:text-accent-gold hover:pl-1 transition-all duration-300 font-light block">
+                <Link href="/blog/" className="text-sm text-neutral-600 dark:text-text-light/75 hover:text-accent-gold hover:pl-1 transition-all duration-300 font-light block">
                   <T k="footer.editorialInsights" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="text-sm text-neutral-600 dark:text-text-light/75 hover:text-accent-gold hover:pl-1 transition-all duration-300 font-light block">
+                <Link href="/contact" className="text-sm text-neutral-600 dark:text-text-light/75 hover:text-accent-gold hover:pl-1 transition-all duration-300 font-light block">
                   <T k="footer.connectStrategically" />
-                </a>
+                </Link>
               </li>
               <li>
                 <a
@@ -177,12 +178,12 @@ export default function Footer() {
             <T k="footer.rights" />
           </p>
           <div className="flex space-x-6">
-            <a href="#home" className="hover:text-accent-gold transition-colors duration-300">
+            <Link href="/#home" className="hover:text-accent-gold transition-colors duration-300">
               <T k="footer.sitemap" />
-            </a>
-            <a href="#home" className="hover:text-accent-gold transition-colors duration-300">
+            </Link>
+            <Link href="/#home" className="hover:text-accent-gold transition-colors duration-300">
               <T k="footer.privacy" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

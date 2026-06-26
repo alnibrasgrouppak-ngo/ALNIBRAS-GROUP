@@ -86,7 +86,7 @@ export default function RootLayout({
     "url": "https://alnibras.pk",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://alnibras.pk/logo.png"
+      "url": "https://alnibras.pk/logo.new.jpg"
     },
     "description": "Al Nibras Group builds Pakistan's first self-sustaining education-finance loop — connecting Mustafai School System, Al Nibras Finance App, and real business ventures.",
     "address": {
@@ -114,7 +114,7 @@ export default function RootLayout({
     "@id": "https://alnibras.pk/#ngo",
     "name": "Al Nibras Group",
     "url": "https://alnibras.pk",
-    "logo": "https://alnibras.pk/logo.png",
+    "logo": "https://alnibras.pk/logo.new.jpg",
     "description": "Pakistan's first school-to-business social enterprise ecosystem connecting Mustafai School System, Al Nibras Finance App, and Student Operators Program.",
     "address": {
       "@type": "PostalAddress",
